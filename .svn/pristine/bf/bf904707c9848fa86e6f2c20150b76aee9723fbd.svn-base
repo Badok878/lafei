@@ -1,0 +1,236 @@
+<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<META name="renderer" content="webkit">
+<META charset="utf-8">
+<META http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<META name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>在线充值－<?php echo S('WEB_NAME');?></title>
+
+
+<link href="/Public/Home/css/bootstrap.min.css" rel="stylesheet">
+<link href="/Public/Home/css/bootstrap-slider.all.css" rel="stylesheet">
+
+<link href="/Public/Home/css/nifty.min.css" rel="stylesheet">
+<link href="/Public/Home/css/font-awesome.min.css" rel="stylesheet">
+<link href="/Public/Home/css/bootstrap-datetimepicker.min.css" rel="stylesheet">
+<link href="/Public/Home/css/switchery.min.css" rel="stylesheet">
+<link href="/Public/Home/css/css.min.css" rel="stylesheet">
+<link href="/Public/Home/css/withdraw.css" rel="stylesheet">
+<link href="/Public/Home/css/comm.min.css" rel="stylesheet">
+<link href="/Public/Home/css/dataTables.bootstrap.min.css" rel="stylesheet">
+<link href="/Public/Home/css/dataTables.responsive.min.css" rel="stylesheet">
+<link rel="stylesheet" href="/Public/Home/css/select2.min.css">
+<meta name="GENERATOR" content="MSHTML 11.00.9600.16428">
+
+<!-- IE浏览器时需要以下js支持 -->
+
+<!-- 页面header钩子，一般用于加载插件CSS文件和代码 -->
+<?php echo hook('pageHeader');?>
+
+	
+    <link href="/Public/Home/css/chongzhi.css" rel="stylesheet">
+
+	<!-- /头部 -->
+	
+
+    <!--<script src="/Public/Home/js/jquery.min.js"></script>-->
+    <script src="/Public/Home/js/jquery.min.js"></script>
+
+    <script src="/Public/Home/js/bootstrap.min.js"></script>
+
+
+    <script src="/Public/Home/js/bootstrap-datetimepicker.min.js"></script>
+    <script src="/Public/Home/js/bootstrap-datetimepicker.zh-CN.min.js"></script>
+    <script src="/Public/Home/js/nifty.min.js"></script>
+    <script src="/Public/Home/js/switchery.min.js"></script>
+    <script src="/Public/Home/js/md5.min.js"></script>
+    <script src="/Public/Home/js/common.min.js"></script>
+    <script src="/Public/Home/js/dataTables.min.js"></script>
+    <script src="/Public/Home/js/dataTables.bootstrap.min.js"></script>
+    <script src="/Public/Home/js/dataTables.responsive.min.js"></script>
+    <script src="/Public/Home/js/bootbox.min.js"></script>
+
+    <script src="/Public/Home/js/layer/layui/layui.js"></script>
+    <script src="/Public/Home/js/layer/laydate/laydate.js"></script>
+    <link rel="stylesheet" href="/Public/Home/js/layer/layui/css/layui.css">
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("body").click(
+                function toggle() {
+                    $("div#demo-set", window.top.document).removeClass("open");
+                    $(".mega-dropdown", window.top.document).removeClass("open");
+                    $(".dropdown", window.top.document).removeClass("open");
+                    $(".lskj").fadeOut(200);
+                }
+            );
+        });
+        $('.form_datetime').datetimepicker({
+            autoclose: 1,
+            todayBtn: 0,
+            minView: 2,
+            language: 'zh-CN',
+            format: 'yyyy-mm-dd hh:ii'
+        });
+        $('.form_datetime').focus(function () {
+            this.blur();
+        });
+    </script>
+
+
+
+
+</head>
+
+<body>
+
+	<!-- 头部 -->
+	
+
+
+
+
+	
+
+
+	<!-- 主体 -->
+	
+    <script>
+        function local_submitForm_scanPay(pType){
+            var key = "<?php echo ($orderKey); ?>";
+            var pay_id = "<?php echo ($pay_id); ?>";
+            var wx_pay_id = "<?php echo ($wx_pay_id); ?>";
+            var wx_pay_code = "<?php echo ($wx_pay_code); ?>";
+            var zfb_pay_id = "<?php echo ($zfb_pay_id); ?>";
+            var zfb_pay_code = "<?php echo ($zfb_pay_code); ?>";
+            var bankCode = '';
+            var payChannelId = '';
+            if(pType=='bank_scanpay' || pType=='bank_qqScan'){
+                bankCode = wx_pay_code;
+                payChannelId = wx_pay_id;
+            }else{
+                bankCode = zfb_pay_code;
+                payChannelId = zfb_pay_id;
+            }
+            $.post("index.php?s=/home/recharge/getQcode", {orderKey:key,type:pType,payChannelId:payChannelId,bankCode:bankCode,pay_id:pay_id},function(data,status){
+                if(status=='success'){
+                    $("#loc_scan_window").show();
+                    $("#scan2d").show();
+                    sQrcode(data.qrcode);
+                }else{
+                    alert('支付信息错误');
+                }
+            },'json');
+        }
+
+        function sQrcode(qdata){
+            $("#qrcode222").empty().qrcode({		// 调用qQcode生成二维码
+                render : "canvas",    			// 设置渲染方式，有table和canvas，使用canvas方式渲染性能相对来说比较好
+                text : qdata,    				// 扫描了二维码后的内容显示,在这里也可以直接填一个网址或支付链接
+                width : "200",              	// 二维码的宽度
+                height : "200",             	// 二维码的高度
+                background : "#ffffff",     	// 二维码的后景色
+                foreground : "#000000",     	// 二维码的前景色
+                src: ""    						// 二维码中间的图片
+            });
+        }
+    </script>
+    <?php echo ($output); ?>
+
+    <style>
+        .errorcontent{
+            border:1px solid #ecf7fd;
+            width:80%;
+            margin:0 auto;
+            height: 200px;
+        }
+        #scan_window_excption{
+            background-color:#ecf7fd;
+            text-align: center;
+        }
+        .errorcontent .right{
+            width:100%;
+            height:200px;
+        }
+        .errorcontent .returninfo{
+            text-align:left;
+            height:145px;
+            margin:0 auto;
+            display: inline-block;
+        }
+        .errorcontent .right h1{
+            margin:-20px auto 20px  auto;
+            color:#333333;
+            font:bold 25px/180% "微软雅黑"}
+        .errorcontent .right p{
+            color:#666;
+            font:bold 14px/120% '宋体';
+            margin-top:10px;
+            text-align: left;
+
+        }
+        .errorcontent .right p span{
+            color:#F00;
+            font-weight:normal;
+            margin:0 0 0 80px;
+            display: inline-block;
+
+        }
+        .errorcontent .right p em{
+            position:absolute;
+            font-style:normal;
+            font-weight:normal;
+            flaot:left;
+            display:inlien-block;
+        }
+    </style>
+    <script type="text/javascript" src="/Public/Home/zfjs/jquery.qrcode.js"></script>
+    <script type="text/javascript" src="/Public/Home/zfjs/utf.js"></script>
+    <div id="loc_scan_window" class="white_content" style="display: none;">
+        <div class="scan_main">
+            <h4><span onclick="closeyem()">关闭</span></h4>
+            <script>
+                function closeyem(){
+                    $("#loc_scan_window").hide();
+                }
+            </script>
+        </div>
+        <div style="width: 520px;height: 250px; border-bottom: 1px solid #ddd; text-align:center;padding:10px 0;margin: 0 auto;position:relative; ">
+            <div id="qrcode222" style="width:200px;height:200px;margin:0 auto;overflow:hidden; text-align: center; border:1px solid #ddd;z-index:1; " title="">
+                <canvas width="200" height="200" style="display: none;">
+                </canvas>
+                <img alt="Scan me!" src="" style="display: block;">
+            </div>
+            <!-- <img id="dinpayLogo" src="https://cdnpay.dd4.com/pay/images/dinpay.png" style="z-index:2;position:absolute;left:50%;top:50%;margin: -56px 0 0 -32px;display: none"/> -->
+            <!--<div><img id="subImg_scanPay" src="https://cdnpay.dd4.com/pay/images/scanning.png" align="middle" style="margin:10px auto;width:100px;height: 30px;"></div>
+            <input type="hidden" id="scan2d" value="weixin://wxpay/bizpayurl?pr=4OMgAxs">
+            <input type="hidden" id="scan2d_alipay">-->
+        </div>
+        <div class="tisp_main_bottom tisp_main">
+            <ul>
+                <li><span>付款成功&nbsp;&nbsp; </span>|&nbsp;&nbsp;您可以：<a onclick="showPro_scanPay('/PaymentCom','scan_window')" href="javascript:void(0)">返回商家网站</a></li>
+                <li><span class="span1">付款失败&nbsp;&nbsp;</span>|&nbsp;&nbsp;您可以：<a onclick="checkPay_scanPay('/PaymentCom')" href="javascript:void(0)">选择其他支付方式</a><em><a href="http://www.dinpay.com/faq_list.html?=#19F" target="_blank">常见问题小贴士</a>
+                    <img src="https://cdnpay.dd4.com/pay/images/tips_icon1_11.jpg">
+                    <div>
+                        <p>①&nbsp;如果银行卡已经扣款成功，多得宝在收到银行订单反馈后会立即通知商户。</p>
+                        <p>②&nbsp;请勿重复提交订单，或多次支付同一笔订单，防止产生重复订单。</p>
+                    </div>
+                </em></li>
+            </ul>
+        </div>
+    </div>
+
+
+	<!-- /主体 -->
+
+	<!-- 底部 -->
+	
+
+
+	<!-- /底部 -->
+</body>
+
+</html>

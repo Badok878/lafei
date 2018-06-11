@@ -1,0 +1,2 @@
+node MyTest.js
+pause

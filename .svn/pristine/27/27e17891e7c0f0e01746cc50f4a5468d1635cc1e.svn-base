@@ -1,0 +1,5 @@
+[TYPE]: MYSQL
+[SQL]: REPLACE INTO `nitalk_session` (`uid`,`sessid`,`active`) VALUES (286,'5f8kpi8hp8k376js14pr2iupl5',1487520007)
+[TIME]: 2017-02-20 00:00:07
+[URI]: /nitalk/gate
+

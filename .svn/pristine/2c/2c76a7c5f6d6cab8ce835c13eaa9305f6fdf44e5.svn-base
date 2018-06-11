@@ -1,0 +1,1404 @@
+<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<META name="renderer" content="webkit">
+<META charset="utf-8">
+<META http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<META name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>帮助中心－<?php echo S('WEB_NAME');?></title>
+
+
+<link href="/Public/Home/css/bootstrap.min.css" rel="stylesheet">
+<link href="/Public/Home/css/bootstrap-slider.all.css" rel="stylesheet">
+
+<link href="/Public/Home/css/nifty.min.css" rel="stylesheet">
+<link href="/Public/Home/css/font-awesome.min.css" rel="stylesheet">
+<link href="/Public/Home/css/bootstrap-datetimepicker.min.css" rel="stylesheet">
+<link href="/Public/Home/css/switchery.min.css" rel="stylesheet">
+<link href="/Public/Home/css/css.min.css" rel="stylesheet">
+<link href="/Public/Home/css/withdraw.css" rel="stylesheet">
+<link href="/Public/Home/css/comm.min.css" rel="stylesheet">
+<link href="/Public/Home/css/dataTables.bootstrap.min.css" rel="stylesheet">
+<link href="/Public/Home/css/dataTables.responsive.min.css" rel="stylesheet">
+<link rel="stylesheet" href="/Public/Home/css/select2.min.css">
+<meta name="GENERATOR" content="MSHTML 11.00.9600.16428">
+
+<!-- IE浏览器时需要以下js支持 -->
+
+<!-- 页面header钩子，一般用于加载插件CSS文件和代码 -->
+<?php echo hook('pageHeader');?>
+
+	
+	<!-- /头部 -->
+	
+
+    <!--<script src="/Public/Home/js/jquery.min.js"></script>-->
+    <script src="/Public/Home/js/jquery.min.js"></script>
+
+    <script src="/Public/Home/js/bootstrap.min.js"></script>
+
+
+    <script src="/Public/Home/js/bootstrap-datetimepicker.min.js"></script>
+    <script src="/Public/Home/js/bootstrap-datetimepicker.zh-CN.min.js"></script>
+    <script src="/Public/Home/js/nifty.min.js"></script>
+    <script src="/Public/Home/js/switchery.min.js"></script>
+    <script src="/Public/Home/js/md5.min.js"></script>
+    <script src="/Public/Home/js/common.min.js"></script>
+    <script src="/Public/Home/js/dataTables.min.js"></script>
+    <script src="/Public/Home/js/dataTables.bootstrap.min.js"></script>
+    <script src="/Public/Home/js/dataTables.responsive.min.js"></script>
+    <script src="/Public/Home/js/bootbox.min.js"></script>
+
+    <script src="/Public/Home/js/layer/layui/layui.js"></script>
+    <script src="/Public/Home/js/layer/laydate/laydate.js"></script>
+    <link rel="stylesheet" href="/Public/Home/js/layer/layui/css/layui.css">
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("body").click(
+                function toggle() {
+                    $("div#demo-set", window.top.document).removeClass("open");
+                    $(".mega-dropdown", window.top.document).removeClass("open");
+                    $(".dropdown", window.top.document).removeClass("open");
+                    $(".lskj").fadeOut(200);
+                }
+            );
+        });
+        $('.form_datetime').datetimepicker({
+            autoclose: 1,
+            todayBtn: 0,
+            minView: 2,
+            language: 'zh-CN',
+            format: 'yyyy-mm-dd hh:ii'
+        });
+        $('.form_datetime').focus(function () {
+            this.blur();
+        });
+    </script>
+
+
+
+
+</head>
+
+<body>
+
+	<!-- 头部 -->
+	
+
+
+
+
+	
+
+
+	<!-- 主体 -->
+	
+    <div id='page-content'>
+        <div class="panel">
+            <div class="panel-heading">
+                <h3 class="panel-title"><span class="glyphicon glyphicon-question-sign" style="color:  #ec3e08;padding:10px;" aria-hidden="true"></span>帮助中心</h3>
+            </div>
+            <div class="panel-body">
+                <div class="tab-base">
+                    <ul class="nav nav-tabs">
+                        <li class="active"><a data-toggle="tab" href="#home">常见问题</a></li>
+                        <li><a data-toggle="tab" href="#menu1">玩法介绍</a></li>
+                        <!--   <li><a data-toggle="tab" href="#menu2">如何充值</a></li>
+                      <li><a data-toggle="tab" href="#menu3">最新公告</a></li>
+                      <li><a data-toggle="tab" href="#menu4">操作指南</a></li> -->
+                    </ul>
+                </div>
+                <div class="tab-content">
+                    <style type="text/css">
+                    .table {
+                        margin-bottom: 0px;
+                    }
+                    </style>
+                    <div id="home" class="tab-pane fade in active">
+                        <div class="mminfo">
+                            <div class="mminfohead">
+                                <span><i class="fa fa-exclamation"></i>
+                               高频游戏的每天第1期开始销售时间和最后1期销售截止时间是多少
+                                </span>
+                            </div>
+                            <div class="mminfobox">
+                                银河国际娱乐平台现有15个高频彩种，其中重庆时时彩、秒秒时时彩、一分时时彩、两分时时彩、秒秒11选5、一分11选5、两分11选5，极速3d等，包括2个销售时间段。 详情如下表所示：
+                            </div>
+                        </div>
+                        <div class="well well-sm">
+                            <table class="table table-hover">
+                                <thead>
+                                    <tr>
+                                        <th>游戏彩种名称</th>
+                                        <th>每期销售时间</th>
+                                        <th>当天第1期开始销售时间</th>
+                                        <th>当天最后1期销售截止时间</th>
+                                        <th> 期数 </th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>重庆时时彩</td>
+                                        <td>5分钟 10分钟</td>
+                                        <td>第1阶段：晚上22:00 第2阶段：早上07:00
+                                        </td>
+                                        <td>第1阶段：凌晨01:54:00 第2阶段：晚上21:59:10
+                                        </td>
+                                        <td>120</td>
+                                    </tr>
+                                    <tr>
+                                        <td>秒秒时时彩</td>
+                                        <td>30秒</td>
+                                        <td>第1阶段：凌晨00:00:55 第2阶段：早上07:00:00
+                                        </td>
+                                        <td>第1阶段：凌晨05:00:25 第2阶段：晚上23:59:55
+                                        </td>
+                                        <td>2638</td>
+                                    </tr>
+                                    <tr>
+                                        <td>一分时时彩</td>
+                                        <td>1分钟</td>
+                                        <td>第1阶段：凌晨00:00:00 第2阶段：早上07:00:00
+                                        </td>
+                                        <td>第1阶段：凌晨05:00:00 第2阶段：晚上23:59:00
+                                        </td>
+                                        <td>1319</td>
+                                    </tr>
+                                    <tr>
+                                        <td>两分时时彩</td>
+                                        <td>2分钟</td>
+                                        <td>第1阶段：凌晨00:01 第2阶段：早上07:01
+                                        </td>
+                                        <td>第1阶段：凌晨05:00:00 第2阶段：晚上24:00:00
+                                        </td>
+                                        <td>659</td>
+                                    </tr>
+                                    <tr>
+                                        <td>五分时时彩</td>
+                                        <td>5分钟</td>
+                                        <td>第1阶段：凌晨00:01 第2阶段：早上07:01
+                                        </td>
+                                        <td>第1阶段：凌晨05:00:00 第2阶段：晚上24:00:00
+                                        </td>
+                                        <td>264</td>
+                                    </tr>
+                                    <tr>
+                                        <td>秒秒11选5</td>
+                                        <td>30秒</td>
+                                        <td>第1阶段：凌晨00:00:15 第2阶段：早上07:00:15
+                                        </td>
+                                        <td>第1阶段：凌晨05:00:45 第2阶段：晚上23:59:45
+                                        </td>
+                                        <td>2641</td>
+                                    </tr>
+                                    <tr>
+                                        <td>一分11选5</td>
+                                        <td>1分钟</td>
+                                        <td>第1阶段：凌晨00:00:20 第2阶段：早上07:00:20
+                                        </td>
+                                        <td>第1阶段：凌晨 05:00:20 第2阶段：晚上23:59:20
+                                        </td>
+                                        <td>1319</td>
+                                    </tr>
+                                    <tr>
+                                        <td>两分11选5</td>
+                                        <td>2分钟</td>
+                                        <td>第1阶段：凌晨00:00 第2阶段：早上07:00
+                                        </td>
+                                        <td>第1阶段：凌晨05:00:00 第2阶段：晚上24:00:00
+                                        </td>
+                                        <td>659</td>
+                                    </tr>
+                                    <tr>
+                                        <td>五分11选5</td>
+                                        <td>5分钟</td>
+                                        <td>第1阶段：凌晨00:00 第2阶段：早上07:00
+                                        </td>
+                                        <td>第1阶段：凌晨05:00:00 第2阶段：晚上24:00:00
+                                        </td>
+                                        <td>264</td>
+                                    </tr>
+                                    <tr>
+                                        <td>山东11选5</td>
+                                        <td>10分钟</td>
+                                        <td>早上08:30</td>
+                                        <td>晚上22:55:00</td>
+                                        <td>87</td>
+                                    </tr>
+                                    <tr>
+                                        <td>江西11选5</td>
+                                        <td>10分钟</td>
+                                        <td>早上07:00</td>
+                                        <td>晚上21:58:00</td>
+                                        <td>84</td>
+                                    </tr>
+                                    <tr>
+                                        <td>广东11选5</td>
+                                        <td>10分钟</td>
+                                        <td>早上07:00</td>
+                                        <td>晚上21:58:00</td>
+                                        <td>84</td>
+                                    </tr>
+                                    <tr>
+                                        <td>极速3D</td>
+                                        <td>1分钟</td>
+                                        <td>第1阶段：凌晨00:00 第2阶段：早上07:00
+                                        </td>
+                                        <td>第1阶段：凌晨05:00 第2阶段：晚上24:00
+                                        </td>
+                                        <td>1319</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="mminfo">
+                            <div class="mminfohead">
+                                <span><i class="fa fa-exclamation"></i>
+                               平台充值限额及服务时间是多少
+                                </span>
+                            </div>
+                            <div class="mminfobox">
+                                平台充值限额及服务时间段。 详情如下表所示：
+                            </div>
+                        </div>
+                        <div class="well well-sm">
+                            <table class="table table-hover">
+                                <thead>
+                                    <tr>
+                                        <th>所属银行</th>
+                                        <th>充值时间</th>
+                                        <th>充值限额</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>工商银行</td>
+                                        <td>09:00am --- 次日02:00am</td>
+                                        <td> 最低50元， 最高50,000元
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>招商银行</td>
+                                        <td> 09:00am --- 次日02:00am</td>
+                                        <td> 最低100元，最高50,000元
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>银行充值（提供20几家银行）</td>
+                                        <td> 07:00am --- 次日05:00am</td>
+                                        <td> 最低 10元，最高45,000元
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="mminfo">
+                            <div class="mminfohead">
+                                <span><i class="fa fa-exclamation"></i>
+                               平台对于提款有何规定？
+                                </span>
+                            </div>
+                            <div class="mminfobox">
+                                1. 对于新开的用户需要自开户8小时后方可发起提款。
+                                <br> 2. 新增银行卡（含新增，修改）8个小时后方可发起提款。
+                                <br> 3. 存款后总投注额小于总存款额30%的提款将不予受理。
+                                <br> 4.一日只能发起提现3次(无论成功或失败）。
+                                <br>
+                            </div>
+                        </div>
+                        <div class="mminfo">
+                            <div class="mminfohead">
+                                <span><i class="fa fa-exclamation"></i>
+                              绑卡规定说明如下：
+                                </span>
+                            </div>
+                            <div class="mminfobox">
+                                1. 平台绑定的银行卡：工行、农行、建行、招行、民生、中信、兴业、光大、浦发、平安、中国。</br>
+                                2. 只能绑定相同姓名的银行卡。</br>
+                                3. 绑卡后，无法解绑，只能增加绑定，每张银行卡只能被1个账号给绑定。</br>
+                                4. 无论帐号有无被注销，绑定过的卡都无法再被其他帐号绑定。</br>
+                                5. 每个账号最多可绑定5张银行卡。</br>
+                                6. 出现绑卡信息有误，导致无法正常提现，请尽速联系在线客服。</br>
+                                7. 绑卡后或者增加绑卡后，需要等候8小时后，才能发起提现。</br>
+                            </div>
+                        </div>
+                        <div class="mminfo">
+                            <div class="mminfohead">
+                                <span><i class="fa fa-exclamation"></i>
+                              平台提现金额与服务时间
+                                </span>
+                            </div>
+                            <div class="mminfobox">
+                                平台提现金额与服务时间如下表：
+                            </div>
+                        </div>
+                        <div class="well well-sm">
+                            <table class="table table-hover">
+                                <thead>
+                                    <tr>
+                                        <th>所属银行</th>
+                                        <th>提现时间</th>
+                                        <th>提现限额</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>工商银行</td>
+                                        <td>09:00am --- 次日02:00am</td>
+                                        <td> 最低50元， 最高50,000元
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>农业银行</td>
+                                        <td>09:00am --- 次日02:00am</td>
+                                        <td> 最低50元， 最高50,000元
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>建设银行</td>
+                                        <td> 09:00am --- 次日02:00am</td>
+                                        <td> 最低100元，最高45,000元
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>招商银行</td>
+                                        <td> 07:00am --- 次日05:00am</td>
+                                        <td> 最低100元，最高50,000元
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>民生银行</td>
+                                        <td> 07:00am --- 次日05:00am</td>
+                                        <td> 最低50元，最高100,000元
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>中信银行</td>
+                                        <td> 07:00am --- 次日05:00am</td>
+                                        <td> 最低50元，最高100,000元
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>兴业银行</td>
+                                        <td> 07:00am --- 次日05:00am</td>
+                                        <td> 最低50元，最高100,000元
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>光大银行</td>
+                                        <td> 07:00am --- 次日05:00am</td>
+                                        <td> 最低50元，最高100,000元
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>浦发银行</td>
+                                        <td> 07:00am --- 次日05:00am</td>
+                                        <td> 最低50元，最高100,000元
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>平安银行</td>
+                                        <td> 07:00am --- 次日05:00am</td>
+                                        <td> 最低50元，最高100,000元
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>中国银行</td>
+                                        <td> 07:00am --- 次日05:00am</td>
+                                        <td> 最低50元，最高100,000元
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="mminfo">
+                            <div class="mminfohead">
+                                <span><i class="fa fa-exclamation"></i>
+                              在线客服服务时间是什么时候？
+                                </span>
+                            </div>
+                            <div class="mminfobox">
+                                在线客服服务时间为：24小时
+                            </div>
+                        </div>
+                        <div class="mminfo">
+                            <div class="mminfohead">
+                                <span><i class="fa fa-exclamation"></i>
+                              平台帐号清理规则如下：
+                                </span>
+                            </div>
+                            <div class="mminfobox">
+                                会员帐号若超过16天未登入，且帐户余额小于或等于15元，系统将自动删除帐号。被清理的帐户，没有办法复原。
+                            </div>
+                        </div>
+                        <div class="mminfo">
+                            <div class="mminfohead">
+                                <span><i class="fa fa-exclamation"></i>
+                              小游戏的销售开始时间和销售停止时间是多少？
+                                </span>
+                            </div>
+                            <div class="mminfobox">
+                                小游戏分两段时间销售:
+                                <br/> 第一段开始时间每天凌晨0:00到3:00。
+                                <br/> 第二段开始时间每天凌晨7:00到半夜12点。
+                                <br/>
+                            </div>
+                        </div>
+                        <div class="mminfo">
+                            <div class="mminfohead">
+                                <span><i class="fa fa-exclamation"></i>
+                              提款什么时候可以到账
+                                </span>
+                            </div>
+                            <div class="mminfobox">
+                                正常情况下您的提款在您发起提款后的10分钟内到您的提款银行账户，如因网银系统维护或者国际网络故障会延时处理。
+                            </div>
+                        </div>
+                        <div class="mminfo">
+                            <div class="mminfohead">
+                                <span><i class="fa fa-exclamation"></i>
+                            为何存款不到帐？
+                                </span>
+                            </div>
+                            <div class="mminfobox">
+                                1. 平台填写的存款金额和实际汇款金额不一致，会导致游戏平台不到账。
+                                <br/> 2. 使用工行、招行时没有从平台获取正确的附言，会导致不到账。
+                                <br/> 3. 汇款时未使用平台提供的最新银行信息。
+                                <br/> 4. 没有使用网银进行汇款，（银行柜台和ATM及手机汇款会不到帐）。
+                                <br/> 5. 存款时没有从平台发起存款请求或者没有使用平台最新收款银行信息。
+                                <br/> 6. 如果因用户没有使用平台的最新收款信息而汇款到旧的收款银行帐号而损失，须由用户自行承担。
+                                <br/>
+                            </div>
+                        </div>
+                        <div class="mminfo">
+                            <div class="mminfohead">
+                                <span><i class="fa fa-exclamation"></i>
+                          游戏撤单问题
+                                </span>
+                            </div>
+                            <div class="mminfobox">
+                                1. 任何彩种游戏的撤单都必须在停止投注之前进行，当期投注时间截止后将无法再进行撤单操作。
+                                <br/> 2. 追号单的撤单需要到"投注记录---追号查询"里面进行终止任务。
+                                <br/>
+                            </div>
+                        </div>
+                        <div class="mminfo">
+                            <div class="mminfohead">
+                                <span><i class="fa fa-exclamation"></i>
+                          参与游戏时提示“奖金超过上限”问题
+                                </span>
+                            </div>
+                            <div class="mminfobox">
+                                1. 每个账号在同一游戏、同一玩法、同一奖期中购买相同号码的最大可中奖金额。
+                                <br> 2.平台的奖金赔付限额为40万。
+                                <br>
+                            </div>
+                        </div>
+                        <div class="mminfo">
+                            <div class="mminfohead">
+                                <span><i class="fa fa-exclamation"></i>
+                          什么是赔付限额？
+                                </span>
+                            </div>
+                            <div class="mminfobox">
+                                赔付限额是指该平台账户在某个玩法的某一注号码投注所能获得的最大赔付总额，平台目前设定的最高赔付限额为40万。
+                            </div>
+                        </div>
+                        <div class="mminfo">
+                            <div class="mminfohead">
+                                <span><i class="fa fa-exclamation"></i>
+                          第3方开奖机构不开奖，投注单如何处理？
+                                </span>
+                            </div>
+                            <div class="mminfobox">
+                                时时彩游戏彩种、11选5游戏彩种，若官方超过30分钟未开奖，平台将对超过30分钟的期数进行撤单返款，依次顺延，撤单后无论第三方以任何形式补开，平台均维持撤单处理。
+                            </div>
+                        </div>
+                        <div class="mminfo">
+                            <div class="mminfohead">
+                                <span><i class="fa fa-exclamation"></i>
+                          为什么我一个月前的购买记录查不到了
+                                </span>
+                            </div>
+                            <div class="mminfobox">
+                                目前平台只保留5天的历史记录，之前记录会被系统自动清理。
+                            </div>
+                        </div>
+                        <div class="mminfo">
+                            <div class="mminfohead">
+                                <span><i class="fa fa-exclamation"></i>
+                          忘记密码怎么办？
+                                </span>
+                            </div>
+                            <div class="mminfobox">
+                                1. 登录密码忘记，请通过联系上级或者客服修改。
+                                <br/> 2. 资金密码遗忘，可通过账户中心---密保设置---重置资金密码。
+                                <br/> 3. 建议您初始拿到账号请到平台“账户管理-安全中心”进行登录密码、提款密码、密保问题的设定。
+                                <br/> 4. 请妥善保管好您的提款密码，如果资金密码，登录密码和密保遗忘将无法再修改和找回密码。
+                                <br/>
+                            </div>
+                        </div>
+                        <div class="mminfo">
+                            <div class="mminfohead">
+                                <span><i class="fa fa-exclamation"></i>
+                          如何保障帐号安全？
+                                </span>
+                            </div>
+                            <div class="mminfobox">
+                                1. 首次获得账户之后, 请修改初始登陆密码并设定提款密码, 并绑定你的邮箱和设定您的密保, 同时绑定您需要用来充值或者提款的银行账号信息。
+                                <br/> 2. 妥善保管您的登录密码和提款密码，平时切勿相信他人以任何理由索要平台账号的登录密码及提款密码以及密保信息，定期对电脑进行安全检查，避免电脑中病毒和木马导致账户被盗。
+                                <br/>
+                            </div>
+                        </div>
+                        <div class="mminfo">
+                            <div class="mminfohead">
+                                <span><i class="fa fa-exclamation"></i>
+                          请问使用什么浏览器最适合于平台游戏呢？
+                                </span>
+                            </div>
+                            <div class="mminfobox">
+                                操作平台时，请使用IE、火狐、谷哥浏灠器，请尽量避免使用360浏灠器，谢谢！
+                                <br> 若出现360栏截的异常提示时，请不予理会，选择继续操作，若有疑问，欢迎随时咨询在线客服
+                                <br>
+                            </div>
+                        </div>
+                        <div class="mminfo">
+                            <div class="mminfohead">
+                                <span><i class="fa fa-exclamation"></i>
+                          登录过程中跳转到谷歌界面
+                                </span>
+                            </div>
+                            <div class="mminfobox">
+                                1. 用户名输入错误导致。
+                                <br> 2. 账号不存在。
+                                <br> 3. 当前域名为非系统指定域名，请联系上级或客服获取最新域名。
+                                <br>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="menu1" class="tab-pane fade">
+                        <style type="text/css">
+                        #tabs {
+                            overflow: hidden;
+                            width: 100%;
+                            margin: 0;
+                            padding: 0;
+                            list-style: none;
+                        }
+                        
+                        #tabs li {
+                            float: left;
+                            margin: 0 -15px 0 0;
+                        }
+                        
+                        #tabs a {
+                            float: left;
+                            position: relative;
+                            padding: 0 40px;
+                            height: 0;
+                            line-height: 30px;
+                            text-transform: uppercase;
+                            text-decoration: none;
+                            color: #fff;
+                            border-right: 30px solid transparent;
+                            border-bottom: 30px solid #3D3D3D;
+                            border-bottom-color: #777\9;
+                            opacity: .3;
+                            filter: alpha(opacity=30);
+                        }
+                        
+                        #tabs a:hover,
+                        #tabs a:focus {
+                            border-bottom-color: #2ac7e1;
+                            opacity: 1;
+                            filter: alpha(opacity=100);
+                        }
+                        
+                        #tabs a:focus {
+                            outline: 0;
+                        }
+                        
+                        #tabs #current {
+                            z-index: 3;
+                            border-bottom-color: #3d3d3d;
+                            opacity: 1;
+                            filter: alpha(opacity=100);
+                        }
+                        /* ----------- */
+                        
+                        #content {
+                            background: #fff;
+                            border-top: 2px solid #3d3d3d;
+                            padding: 2em;
+                            /*height: 220px;*/
+                        }
+                        
+                        #content h2,
+                        #content h3,
+                        #content p {
+                            margin: 0 0 15px 0;
+                        }
+                        /* Demo page only */
+                        
+                        #about {
+                            color: #999;
+                            text-align: center;
+                            font: 0.9em Arial, Helvetica;
+                        }
+                        
+                        #about a {
+                            color: #777;
+                        }
+                        
+                        .table td,
+                        th {
+                            vertical-align: middle !important;
+                            text-align: center;
+                        }
+                        </style>
+                        <ul id="tabs">
+                            <li><a href="#" name="#tab1">时时彩</a></li>
+                            <li><a href="#" name="#tab2">3D/P3</a></li>
+                            <li><a href="#" name="#tab3">11选5</a></li>
+                        </ul>
+                        <div id="content">
+                            <div id="tab1">
+                                <table class="table">
+                                    <tbody>
+                                        <tr>
+                                            <td>玩法群</td>
+                                            <td>玩法组</td>
+                                            <td>玩法</td>
+                                            <td>玩法说明</td>
+                                            <td>示例</td>
+                                        </tr>
+                                        <tr>
+                                            <td rowspan="8">五星</td>
+                                            <td rowspan="2">五星直选</td>
+                                            <td>复式</td>
+                                            <td>从万位、千位、百位、十位、个位中选择一个5位数号码组成一注，所选号码与开奖号码的万位、千位、百位、十位、个位相同，顺序一致，即为中奖。</td>
+                                            <td>投注方案：1,2,3,4,5； 开奖号码：12345；顺序一致，即中五星直选一等奖。</td>
+                                        </tr>
+                                        <tr>
+                                            <td>单式</td>
+                                            <td>手动输入一个5位数号码组成一注，所投注的号码与开奖号码的万位、千位、百位、十位、个位相同，顺序一致，即为中奖。</td>
+                                            <td>投注方案：1,2,3,4,5； 开奖号码：12345；顺序一致，即中五星直选一等奖。</td>
+                                        </tr>
+                                        <tr>
+                                            <td rowspan="6">五星组选</td>
+                                            <td>组选120</td>
+                                            <td>五星组选120，是从0-9中任意选择5个号码组成一注，所选号码与开奖号码的万位、千位、百位、十位、个位相同，顺序不限，即为中奖</td>
+                                            <td>投注方案：0,2,5,6,8； 开奖号码：开奖号码五个数字只要包含0、2、5、6、8，顺序不限，即中五星组选120一等奖。</td>
+                                        </tr>
+                                        <tr>
+                                            <td>组选60</td>
+                                            <td>五星组选60，是选择1个二重号码和3个单号号码组成一注，所选的单号号码与开奖号码相同，且所选二重号码在开奖号码中出现了2次，即为中奖</td>
+                                            <td>投注方案：二重号8，单号0,2,5，开奖号码五个数字只要包含0、2、5、8、8，顺序不限，即中五星组选60一等奖。</td>
+                                        </tr>
+                                        <tr>
+                                            <td>组选30</td>
+                                            <td>五星组选30，是选择2个二重号和1个单号号码组成一注，所选的单号号码与开奖号码相同，且所选的2个二重号码分别在开奖号码中出现了2次，即为中奖</td>
+                                            <td>投注方案：二重号2,8，单号0，开奖号码五个数字只要包含0、2、2、8、8，顺序不限，即中五星组选30一等奖</td>
+                                        </tr>
+                                        <tr>
+                                            <td>组选20</td>
+                                            <td>五星组选20，是选择1个三重号码和2个单号号码组成一注，所选的单号号码与开奖号码相同，且所选三重号码在开奖号码中出现了3次，即为中奖</td>
+                                            <td>投注方案：三重号8，单号0,2，开奖号码五个数字只要包含0、2、8、8、8，顺序不限，即中五星组选20一等奖。</td>
+                                        </tr>
+                                        <tr>
+                                            <td>组选10</td>
+                                            <td>五星组选10，是选择1个三重号码和1个二重号码，所选三重号码在开奖号码中出现3次，并且所选二重号码在开奖号码中出现了2次，即为中奖</td>
+                                            <td>投注方案：三重号8，二重号2，开奖号码五个数字只要包含2、2、8、8、8，顺序不限，即中五星组选10一等奖。</td>
+                                        </tr>
+                                        <tr>
+                                            <td>组选5</td>
+                                            <td>五星组选5，是选择1个四重号码和1个单号号码组成一注，所选的单号号码与开奖号码相同，且所选四重号码在开奖号码中出现了4次，即为中奖</td>
+                                            <td>投注方案：四重号8，单号2，开奖号码五个数字只要包含2、8、8、8、8，顺序不限、即中五星组选5一等奖。</td>
+                                        </tr>
+                                        <tr>
+                                            <td rowspan="6">四星</td>
+                                            <td rowspan="2">四星直选</td>
+                                            <td>复式</td>
+                                            <td>
+                                                <p>从千位、百位、十位、个位中选择一个4位数号码组成一注，所选号码与开奖号码的千位、百位、十位、个位相同，顺序一致，即为中奖。</p>
+                                            </td>
+                                            <td>投注方案：2,3,4,5； 开奖号码：2345；顺序一致，即中四星直选一等奖。</td>
+                                        </tr>
+                                        <tr>
+                                            <td>单式</td>
+                                            <td>手动输入一个4位数号码组成一注，所投注的号码与开奖号码的千位、百位、十位、个位相同，顺序一致，即为中奖。</td>
+                                            <td>投注方案：2,3,4,5； 开奖号码：2345；顺序一致，即中四星直选一等奖。</td>
+                                        </tr>
+                                        <tr>
+                                            <td rowspan="4">四星组选</td>
+                                            <td>组选24</td>
+                                            <td>四星组选24，是从0-9中任意选择4个号码组成一注，所选号码与开奖号码的千位、百位、十位、个位相同，且顺序不限，即为中奖</td>
+                                            <td>投注方案：0,5,6,8，开奖号码的四个数字只要包含0、5、6、8，顺序不限，即可中四星组选24一等奖。</td>
+                                        </tr>
+                                        <tr>
+                                            <td>组选12</td>
+                                            <td>四星组选12，是选择1个二重号码和2个单号号码组成一注，所选单号号码与开奖号码相同，且所选二重号码在开奖号码中出现了2次，即为中奖</td>
+                                            <td>投注方案：二重号8，单号0,6，开奖号码的四个数字只要包含0、6、8、8，顺序不限，即可中四星组选12一等奖。</td>
+                                        </tr>
+                                        <tr>
+                                            <td>组选6</td>
+                                            <td>四星组选6，是选择2个二重号码组成一注，所选的2个二重号码在开奖号码中分别出现了2次，即为中奖</td>
+                                            <td>投注方案：二重号6,8，开奖号码四个数字只要包含6、6、8、8，顺序不限，即中四星组选6一等奖。</td>
+                                        </tr>
+                                        <tr>
+                                            <td>组选4</td>
+                                            <td>四星组选4，是选择1个三重号码和1个单号号码组成一注，所选单号号码与开奖号码相同，且所选三重号码在开奖号码中出现了3次，即为中奖</td>
+                                            <td>投注方案：三重号8，单号2，开奖号码四个数字只要包含2、8、8、8，顺序不限，即中四星组选4一等奖。</td>
+                                        </tr>
+                                        <tr>
+                                            <td rowspan="8">后三</td>
+                                            <td rowspan="3">后三直选</td>
+                                            <td>复式</td>
+                                            <td>从百位、十位、个位中选择一个3位数号码组成一注，所选号码与开奖号码的百位、十位、个位相同，顺序一致，即为中奖。</td>
+                                            <td>投注方案：3,4,5；开奖号码后三位为345，顺序一致，即中后三直选一等奖。</td>
+                                        </tr>
+                                        <tr>
+                                            <td>单式</td>
+                                            <td>手动输入一个3位数号码组成一注，所投注的号码与开奖号码的百位、十位、个位相同，顺序一致，即为中奖。</td>
+                                            <td>投注方案：3,4,5；开奖号码后三位为345，顺序一致，即中后三直选一等奖。</td>
+                                        </tr>
+                                        <tr>
+                                            <td>直选和值</td>
+                                            <td>所选数值等于开奖号码的百位、十位、个位三个数字相加之和，即为中奖。</td>
+                                            <td>投注方案：和值12；开奖号码后三位和值=12；即中后三直选一等奖。</td>
+                                        </tr>
+                                        <tr>
+                                            <td rowspan="5">后三组选</td>
+                                            <td>组三</td>
+                                            <td>从0-9中选择2个数字组成两注，所选号码与开奖号码的百位、十位、个位相同，顺序不限，(不含豹子号)，即为中奖。</td>
+                                            <td>投注方案：5,8；开奖号码后三位：588或558(顺序不限)；即中后三组选三一等奖。</td>
+                                        </tr>
+                                        <tr>
+                                            <td>组六</td>
+                                            <td>从0-9中任意选择3个号码组成一注，所选号码与开奖号码的百位、十位、个位相同，顺序不限，(不含豹子号)，即为中奖。</td>
+                                            <td>投注方案：2,5,8；开奖号码后三位：258各一个 (顺序不限)；即中后三组六一等奖。</td>
+                                        </tr>
+                                        <tr>
+                                            <td>组六单式</td>
+                                            <td>手动输入一个3位数号码组成一注，所投注的号码与开奖号码的百位、十位、个位相同，顺序一致，即为中奖。</td>
+                                            <td>投注方案：2，5，8;开奖号码后三位:258各一个（顺序不限）;即中后三组选六一等奖。</td>
+                                        </tr>
+                                        <tr>
+                                            <td>组选和值</td>
+                                            <td>所选数值等于开奖号码百位、十位、个位三个数字相加之和(不含豹子号)，即为中奖。</td>
+                                            <td>&nbsp;投注方案：和值3；开奖号码后三位：(1)开出003号码，顺序不限，和值＝3，即中后三组三一等奖；(2)开出012号码，顺序不限，和值＝3，即中后三组六一等奖。</td>
+                                        </tr>
+                                        <tr>
+                                            <td>组选包胆</td>
+                                            <td>从0-9中任意选择1个包胆号码，开奖号码的百位、十位、个位中任意1位与所选包胆号码相同(不含豹子号)，即为中奖。</td>
+                                            <td>投注方案：包胆3；开奖号码后三位：(1)出现3xx,（顺序不限）或者33x（顺序不限），中组三 一等奖 (2)出现3xy（不限顺序），中组六一等奖 &nbsp;。备注：x≠y≠3</td>
+                                        </tr>
+                                        <tr>
+                                            <td rowspan="8">前三</td>
+                                            <td rowspan="3">前三直选</td>
+                                            <td>复式</td>
+                                            <td>从万位、千位、百位中选择一个3位数号码组成一注，所选号码与开奖号码的万位、千位、百位相同，顺序一致，即为中奖。</td>
+                                            <td>投注方案：1,2,3；开奖号码前三位：123，顺序一致，即中前三直选一等奖。</td>
+                                        </tr>
+                                        <tr>
+                                            <td>单式</td>
+                                            <td>手动输入一个3位数号码组成一注，所投注的号码与开奖号码的万位、千位、百位相同，顺序一致，即为中奖。</td>
+                                            <td>投注方案：1,2,3；开奖号码前三位：123，顺序一致，即中前三直选一等奖。</td>
+                                        </tr>
+                                        <tr>
+                                            <td>直选和值</td>
+                                            <td>所选数值等于开奖号码的万位、千位、百位三个数字相加之和，即为中奖。</td>
+                                            <td>投注方案：和值6；开奖号码前三位和值=6；即中前三直选一等奖。</td>
+                                        </tr>
+                                        <tr>
+                                            <td rowspan="5">前三组选</td>
+                                            <td>组三</td>
+                                            <td>从0-9中选择2个数字组成两注，所选号码与开奖号码的万位、千位、百位相同，顺序不限，即为中奖。</td>
+                                            <td>投注方案：5,8；开奖号码前三位：588或558(顺序不限)；即中前三组选三一等奖。</td>
+                                        </tr>
+                                        <tr>
+                                            <td>组六</td>
+                                            <td>从0-9中任意选择3个号码组成一注，所选号码与开奖号码的万位、千位、百位相同，顺序不限，即为中奖。</td>
+                                            <td>投注方案：2，5，8；开奖号码前三位：588或558(顺序不限);即中前三组六一等奖。</td>
+                                        </tr>
+                                        <tr>
+                                            <td>组六单式</td>
+                                            <td>手动输入一个3位数号码组成一注，所投注的号码与开奖号码的百位、千位、万位相同，顺序一致，即为中奖。</td>
+                                            <td>投注方案：2，5，8;开奖号码前三位:258各一个（顺序不限）;即中前三组选六一等奖。</td>
+                                        </tr>
+                                        <tr>
+                                            <td>组选和值</td>
+                                            <td>所选数值等于开奖号码万位、千位、百位三个数字相加之和(不含豹子号)，即为中奖。</td>
+                                            <td>投注方案：和值3；开奖号码前三位：(1)开出003号码，顺序不限，和值＝3，即中前三组三一等奖；(2)开出012号码，顺序不限，和值=3，即中前三组六一等奖。</td>
+                                        </tr>
+                                        <tr>
+                                            <td>组选包胆</td>
+                                            <td>从0-9中任意选择1个包胆号码，开奖号码的万位、千位、百位中任意1位与所选包胆号码相同(不含豹子号)，即为中奖。</td>
+                                            <td>投注方案：包胆3；开奖号码前三位：(1)出现3xx,（顺序不限）或者33x（顺序不限），中组三 一等奖 (2)出现3xy（不限顺序），中组六一等奖 &nbsp;。备注：x≠y≠3</td>
+                                        </tr>
+                                        <tr>
+                                            <td rowspan="14">二星</td>
+                                            <td rowspan="6">二星直选</td>
+                                            <td>后二直选复式</td>
+                                            <td>从十位、个位中选择一个2位数号码组成一注，所选号码与开奖号码的十位、个位相同，顺序一致，即为中奖。</td>
+                                            <td>投注方案：5,8；开奖号码后二位为58，顺序一致，即中后二直选一等奖。</td>
+                                        </tr>
+                                        <tr>
+                                            <td>后二直选单式</td>
+                                            <td>手动输入一个2位数号码组成一注，所投注的号码与开奖号码的十位、个位相同，顺序一致，即为中奖。</td>
+                                            <td>投注方案：5,8；开奖号码后二位为58，顺序一致，即中后二直选一等奖。</td>
+                                        </tr>
+                                        <tr>
+                                            <td>后二直选和值</td>
+                                            <td>所选数值等于开奖号码的十位、个位二个数字相加之和，即为中奖。</td>
+                                            <td>投注方案：和值3；开奖号码后二位相加之和为3，即中后二直选一等奖。</td>
+                                        </tr>
+                                        <tr>
+                                            <td>前二直选复式</td>
+                                            <td>从万位、千位中选择一个2位数号码组成一注，所选号码与开奖号码的万位、千位相同，顺序一致，即为中奖。</td>
+                                            <td>投注方案：2,5；开奖号码前二位为25，顺序一致，即中前二直选一等奖。</td>
+                                        </tr>
+                                        <tr>
+                                            <td>前二直选单式</td>
+                                            <td>手动输入一个2位数号码组成一注，所投注的号码与开奖号码的万位、千位相同，顺序一致，即为中奖。</td>
+                                            <td>投注方案：2,5；开奖号码前二位为25，顺序一致，即中前二直选一等奖。</td>
+                                        </tr>
+                                        <tr>
+                                            <td>前二直选和值</td>
+                                            <td>所选数值等于开奖号码的万位、千位二个数字相加之和，即为中奖。</td>
+                                            <td>投注方案：和值3；开奖号码后前位相加之和为3，即中前二直选一等奖。</td>
+                                        </tr>
+                                        <tr>
+                                            <td rowspan="8">二星组选</td>
+                                            <td>后二组选复式</td>
+                                            <td>从0-9中任选2个号码组成一注，所选号码与开奖号码的十位、个位相同，顺序不限，(不含对子号)即为中奖。</td>
+                                            <td>投注方案：5,8；开奖号码后二位为58 (顺序不限)，即中后二组选一等奖。</td>
+                                        </tr>
+                                        <tr>
+                                            <td>后二组选单式</td>
+                                            <td>手动输入一个2位数号码组成一注，所投注的号码与开奖号码的十位、个位相同，顺序不限，即为中奖。</td>
+                                            <td>投注方案：5,8；开奖号码后二位为58 (顺序不限)，即中后二组选一等奖。</td>
+                                        </tr>
+                                        <tr>
+                                            <td>后二组选和值</td>
+                                            <td>所选数值等于开奖号码的十位、个位二个数字相加之和(不含对子号)，即为中奖。</td>
+                                            <td>投注方案：和值3；开奖号码后二位相加之和为3，即中后二组选一等奖。</td>
+                                        </tr>
+                                        <tr>
+                                            <td>后二组选包胆</td>
+                                            <td>从0-9中任意选择1个包胆号码，开奖号码的十位、个位中任意1位包含所选的包胆号码相同(不含对子号)，即为中奖。</td>
+                                            <td>投注方案：包胆号码8；开奖号码后二位：出现1个8，即中后二组选一等奖。</td>
+                                        </tr>
+                                        <tr>
+                                            <td>前二组选复式</td>
+                                            <td>从0-9中任选2个号码组成一注，所选号码与开奖号码的万位、千位相同，顺序不限，(不含对子号)即为中奖。</td>
+                                            <td>投注方案：2,5；开奖号码前二位为25 (顺序不限)；即中前二组选一等奖。</td>
+                                        </tr>
+                                        <tr>
+                                            <td>前二组选单式</td>
+                                            <td>手动输入一个2位数号码组成一注，所投注的号码与开奖号码的万位、千位相同，顺序不限，即为中奖。</td>
+                                            <td>投注方案：2,5；开奖号码前二位为25 (顺序不限)；即中前二组选一等奖。</td>
+                                        </tr>
+                                        <tr>
+                                            <td>前二组选和值</td>
+                                            <td>所选数值等于开奖号码的万位、千位二个数字相加之和(不含对子号)，即为中奖。</td>
+                                            <td>投注方案：和值3；开奖号码前二位相加之和为3，即中前二组选一等奖。</td>
+                                        </tr>
+                                        <tr>
+                                            <td>前二组选包胆</td>
+                                            <td>从0-9中任意选择1个包胆号码，开奖号码的万位、千位中任意1位包含所选的包胆号码相同(不含对子号)，即为中奖。</td>
+                                            <td>投注方案：包胆号码8；开奖号码前二位：出现1个8，即中前二组选一等奖。</td>
+                                        </tr>
+                                        <tr>
+                                            <td>定位胆</td>
+                                            <td>定位胆</td>
+                                            <td>万千百十个位</td>
+                                            <td>从万位、千位、百位、十位、个位任意位置上至少选择1个以上号码，所选号码与相同位置上的开奖号码一致，即为中奖。</td>
+                                            <td>投注方案：万位：1；开奖号码万位：1；即中定位胆万位一等奖。</td>
+                                        </tr>
+                                        <tr>
+                                            <td rowspan="4">不定位</td>
+                                            <td rowspan="4">不定位</td>
+                                            <td>后三一码不定位</td>
+                                            <td>从0-9中选择1个号码，每注由1个号码组成，只要开奖号码的百位、十位、个位中包含所选号码，即为中奖。</td>
+                                            <td>投注方案：1；开奖号码后三位：至少出现1个1；即中后三一码不定位一等奖。</td>
+                                        </tr>
+                                        <tr>
+                                            <td>后三二码不定位</td>
+                                            <td>从0-9中选择2个号码，每注由2个不同的号码组成，只要开奖号码的百位、十位、个位中同时包含所选的2个号码，即为中奖。</td>
+                                            <td>投注方案：1,2；开奖号码后三位：至少同时出现1和2各1个；即中后三二码不定位一等奖。</td>
+                                        </tr>
+                                        <tr>
+                                            <td>前三一码不定位</td>
+                                            <td>从0-9中选择1个号码，每注由1个号码组成，只要开奖号码的万位、千位、百位中包含所选号码，即为中奖。</td>
+                                            <td>投注方案：1；开奖号码前三位：至少出现1个1；即中前三一码不定位一等奖。</td>
+                                        </tr>
+                                        <tr>
+                                            <td>前三二码不定位</td>
+                                            <td>从0-9中选择2个号码，每注由2个不同的号码组成，只要开奖号码的万位、千位、百位中同时包含所选的2个号码，即为中奖。</td>
+                                            <td>投注方案：1,2；开奖号码前三位：至少同时出现1和2各1个；即中前三二码不定位一等奖。</td>
+                                        </tr>
+                                        <tr>
+                                            <td rowspan="2">大小单双</td>
+                                            <td rowspan="2">大小单双</td>
+                                            <td>后二大小单双</td>
+                                            <td>选择十位和个位的“大(5~9)、小(0~4)、单、双”属性进行投注，所选号码的大小单双属性与开奖号码的大小单双属性相同，顺序一致，即为中奖。</td>
+                                            <td>投注方案：十位：大，个位：单；开奖号码十位与个位分别为：大单；顺序一致，即中后二大小单双一等奖。</td>
+                                        </tr>
+                                        <tr>
+                                            <td>前二大小单双</td>
+                                            <td>选择万位和千位的“大(5~9)、小(0~4)、单、双”属性进行投注，所选号码的大小单双属性与开奖号码的大小单双属性相同，顺序一致，即为中奖。</td>
+                                            <td>投注方案：万位：大，千位：单；开奖号码万位与千位分别为：大单；顺序一致，即中前二大小单双一等奖。</td>
+                                        </tr>
+                                        <tr>
+                                            <td rowspan="4">趣味</td>
+                                            <td rowspan="4">五星趣味</td>
+                                            <td>一帆风顺</td>
+                                            <td>从0-9中任意选择1个号码组成一注，只要开奖号码的万位、千位、百位、十位、个位中包含所选号码，即为中奖。</td>
+                                            <td>投注方案：8；开奖号码：至少出现1个8；即中一帆风顺一等奖。</td>
+                                        </tr>
+                                        <tr>
+                                            <td>好事成双</td>
+                                            <td>从0-9中任意选择1个号码组成一注，只要所选号码在开奖号码的万位、千位、百位、十位、个位中至少出现2次，即为中奖。</td>
+                                            <td>投注方案：8；开奖号码：至少出现2个8；即中好事成双一等奖。</td>
+                                        </tr>
+                                        <tr>
+                                            <td>三星报喜</td>
+                                            <td>从0-9中任意选择1个号码组成一注，只要所选号码在开奖号码的万位、千位、百位、十位、个位中至少出现3次，即为中奖。</td>
+                                            <td>投注方案：8；开奖号码：至少出现3个8；即中三星报喜一等奖。</td>
+                                        </tr>
+                                        <tr>
+                                            <td>四季发财</td>
+                                            <td>从0-9中任意选择1个号码组成一注，只要所选号码在开奖号码的万位、千位、百位、十位、个位中至少出现4次，即为中奖。</td>
+                                            <td>投注方案：8；开奖号码：至少出现4个8；即中四季发财一等奖。</td>
+                                        </tr>
+                                        <tr>
+                                            <td rowspan="14">任选</td>
+                                            <td rowspan="4">任二</td>
+                                            <td>任二直选</td>
+                                            <td>从万位、千位、百位、十位、个位中任意选择两个位置,然后从0-9中在这两个位上至少各选1个号码组成一注,所选2个位置上的开奖号码与所选号码完全相同,且顺序一致,即为中奖。</td>
+                                            <td>如：百位1,个位8； 开奖号码：**1*8,即中任二直选。</td>
+                                        </tr>
+                                        <tr>
+                                            <td>任二直选（单式）</td>
+                                            <td>从万位、千位、百位、十位、个位中任意勾选两个位置,手动输入,从0-9中选择两个数字组成一注,所选2个位置和输入的号码都与开奖号码相同,且顺序一致,即为中奖。</td>
+                                            <td>如：勾选位置百位、个位,输入号码18； 开奖号码：**1*8,即中任二直选。</td>
+                                        </tr>
+                                        <tr>
+                                            <td>任二组选</td>
+                                            <td>从万位、千位、百位、十位、个位中任意勾选两个位置,然后从0-9中在这两个位上至少各选1个号码组成一注,所选2个位置的开奖号码与所选号码一致,且不为对子号,顺序不限,即为中奖。</td>
+                                            <td>如：万位7,个位9, 开奖号码：9***7 或 7***9,均中任二组选。</td>
+                                        </tr>
+                                        <tr>
+                                            <td>任二组选（单式）</td>
+                                            <td>从万位、千位、百位、十位、个位中任意勾选两个位置,手动输入,从0-9中选择两个数字组成一注,所选2个位置的开奖号码与输入号码一致,顺序不限,即为中奖。</td>
+                                            <td>如：勾选位置千位、十位,选择号码6,8； 开奖号码：*6*8* 或 *8*6*,均中任二组选。</td>
+                                        </tr>
+                                        <tr>
+                                            <td rowspan="6">任三</td>
+                                            <td>任三直选</td>
+                                            <td>从万位、千位、百位、十位、个位中任意选择三个位置,然后从0-9中在这三个位上至少各选1个号码组成一注,所选3个位置上的开奖号码与所选号码完全相同,且顺序一致,即为中奖。</td>
+                                            <td>如：万位1、千位3、十位5； 开奖号码：13*5*，即中任三直选。</td>
+                                        </tr>
+                                        <tr>
+                                            <td>任三直选（单式）</td>
+                                            <td>从万位、千位、百位、十位、个位中任意勾选三个位置,手动输入,从0-9中选择三个数字组成一注,所选3个位置和输入的号码都与开奖号码相同,且顺序一致,即为中奖。</td>
+                                            <td>如：勾选位置万位、千位、个位，输入号码152； 开奖号码：15**2，即中任三直选。</td>
+                                        </tr>
+                                        <tr>
+                                            <td>任三组三</td>
+                                            <td>从万位、千位、百位、十位、个位中任意勾选三个位置，然后从0-9中选择两个号码组成两注，所选3个位置的开奖号码与所选号码一致，顺序不限，即为中奖。</td>
+                                            <td>如：勾选位置万位、千位、个位,选择号码68； 开奖号码：66**8 或 68**6,数字正确,顺序不限,均中任三组三。</td>
+                                        </tr>
+                                        <tr>
+                                            <td>任三组三（单式）</td>
+                                            <td>从万位、千位、百位、十位、个位中任意勾选三个位置，然后输入两个相同号码和一个不同号码组成一注，所选3个位置的开奖号码与输入号码一致，顺序不限，即为中奖。</td>
+                                            <td>如：勾选位置万位、千位、个位，输入号码779； 开奖号码：97**7 或 79**7，均中任三组三。</td>
+                                        </tr>
+                                        <tr>
+                                            <td>任三组六</td>
+                                            <td>从万位、千位、百位、十位、个位中任意勾选三个位置，然后从0-9中选择三个号码组成一注，所选3个位置的开奖号码与所选号码一致，顺序不限，即为中奖。</td>
+                                            <td>如：勾选位置万位、百位、个位,选择号码168； 开奖号码：1*6*8 ,数字正确,顺序不限,均中任三组六。</td>
+                                        </tr>
+                                        <tr>
+                                            <td>任三组六（单式）</td>
+                                            <td>从万位、千位、百位、十位、个位中任意勾选三个位置，然后输入三个各不相同的3个号码组成一注，所选3个位置的开奖号码与输入号码一致，顺序不限，即为中奖。</td>
+                                            <td>如：勾选位置万位、百位、个位，选择号码159； 开奖号码：1*5*9 或 9*1*5，即中任三组六。</td>
+                                        </tr>
+                                        <tr>
+                                            <td rowspan="2">任四</td>
+                                            <td>任四直选</td>
+                                            <td>从万位、千位、百位、十位、个位中任意选择四个位置,然后从0-9中在这四个位上至少各选1个号码组成一注,所选4个位置上的开奖号码与所选号码完全相同,且顺序一致,即为中奖。</td>
+                                            <td>如：万位1、千位5、百位0、十位2； 开奖号码：1502*，即中任四直选。</td>
+                                        </tr>
+                                        <tr>
+                                            <td>任四直选（单式）</td>
+                                            <td>从万位、千位、百位、十位、个位中任意勾选四个位置,手动输入,从0-9中选择四个数字组成一注,所选4个位置和输入的号码都与开奖号码相同,且顺序一致,即为中奖。</td>
+                                            <td>如：勾选位置万位、千位、十位、个位，输入号码1524； 开奖号码：15*24，即中任四直选。</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div id="tab2">
+                                <table class="table">
+                                    <tbody>
+                                        <tr>
+                                            <td>玩法群</td>
+                                            <td>玩法组</td>
+                                            <td>玩法</td>
+                                            <td>玩法说明</td>
+                                            <td>示例</td>
+                                        </tr>
+                                        <tr>
+                                            <td rowspan="4">三星</td>
+                                            <td rowspan="2">三星直选</td>
+                                            <td>复式</td>
+                                            <td>从百位、十位、个位中选择一个3位数号码组成一注,所选号码与开奖号码的百位、十位、个位相同,顺序一致,即为中奖。</td>
+                                            <td>投注方案:3,4,5;开奖号码:345;顺序一致，即中三星直选一等奖。</td>
+                                        </tr>
+                                        <tr>
+                                            <td>单式</td>
+                                            <td>手动输入一个3位数号码组成一注,所投注的号码与开奖号码的百位、十位、个位相同,顺序一致,即为中奖。</td>
+                                            <td>投注方案:3,4,5;开奖号码:345;顺序一致，即中三星直选一等奖。</td>
+                                        </tr>
+                                        <tr>
+                                            <td rowspan="2">三星组选</td>
+                                            <td>组三</td>
+                                            <td>从0-9中选择2个数字组成两注,所选号码与开奖号码的百位、十位、个位相同,顺序不限,(不含豹子号),即为中奖。</td>
+                                            <td>投注方案：5,8；开奖号码后三位：588或558(顺序不限)；即中组三一等奖。</td>
+                                        </tr>
+                                        <tr>
+                                            <td>组六</td>
+                                            <td>从0-9中任意选择3个号码组成一注,所选号码与开奖号码的百位、十位、个位相同,顺序不限,(不含豹子号),即为中奖。</td>
+                                            <td>投注方案：2,5,8；开奖号码后三位：258各一个 (顺序不限)；即中组六一等奖。</td>
+                                        </tr>
+                                        <tr>
+                                            <td rowspan="8">二星</td>
+                                            <td rowspan="2">二星后二直选</td>
+                                            <td>复式</td>
+                                            <td>从十位、个位中选择一个2位数号码组成一注,所选号码与开奖号码的十位、个位相同,顺序一致,即为中奖。</td>
+                                            <td>投注方案:5,8;开奖号码后二位:58;顺序一致,即中后二直选一等奖。</td>
+                                        </tr>
+                                        <tr>
+                                            <td>单式</td>
+                                            <td>手动输入一个2位数号码组成一注,所投注的号码与开奖号码的十位、个位相同,顺序一致,即为中奖。</td>
+                                            <td>投注方案:5,8;开奖号码后二位:58;顺序一致,即中后二直选一等奖。</td>
+                                        </tr>
+                                        <tr>
+                                            <td rowspan="2">二星后二组选</td>
+                                            <td>复式</td>
+                                            <td>从0-9中任选2个号码组成一注,所选号码与开奖号码的十位、个位相同,顺序不限,(不含对子号)即为中奖。</td>
+                                            <td>投注方案:5,8;开奖号码后二位:58(顺序不限);即中后二组选一等奖。</td>
+                                        </tr>
+                                        <tr>
+                                            <td>单式</td>
+                                            <td>手动输入一个2位数号码组成一注,所投注的号码与开奖号码的十位、个位相同,顺序不限,即为中奖。</td>
+                                            <td>投注方案:5,8;开奖号码后二位:58(顺序不限);即中后二组选一等奖。</td>
+                                        </tr>
+                                        <tr>
+                                            <td rowspan="2">二星前二直选</td>
+                                            <td>复式</td>
+                                            <td>从百位、十位中选择一个2位数号码组成一注,所选号码与开奖号码的百位、十位相同,顺序一致,即为中奖。</td>
+                                            <td>投注方案:2,5;开奖号码前二位:25;顺序一致,即中前二直选一等奖。</td>
+                                        </tr>
+                                        <tr>
+                                            <td>单式</td>
+                                            <td>手动输入一个2位数号码组成一注,所投注的号码与开奖号码的百位、十位相同,顺序一致,即为中奖。</td>
+                                            <td>投注方案:2,5;开奖号码前二位:25;顺序一致,即中前二直选一等奖。</td>
+                                        </tr>
+                                        <tr>
+                                            <td rowspan="2">二星前二直选</td>
+                                            <td>复式</td>
+                                            <td>从01-11共11个号码中选择2个号码,所选号码与当期开奖号码的百位、十位相同,顺序不限,即为中奖。</td>
+                                            <td>投注方案:2,5;开奖号码前二位:25(顺序不限);即中前二组选一等奖。</td>
+                                        </tr>
+                                        <tr>
+                                            <td>单式</td>
+                                            <td>手动输入2个号码,所投注的号码与当期开奖号码的百位、十位相同,顺序不限,即为中奖。</td>
+                                            <td>投注方案:2,5;开奖号码前二位:25(顺序不限);即中前二组选一等奖。</td>
+                                        </tr>
+                                        <tr>
+                                            <td>定位胆</td>
+                                            <td>定位胆</td>
+                                            <td>定位胆</td>
+                                            <td>从百位、十位、个位任意位置上至少选择1个以上号码,所选号码与相同位置上的开奖号码一致,即为中奖。</td>
+                                            <td>投注方案:百位1;开奖号码百位:1;即中定位胆百位一等奖。</td>
+                                        </tr>
+                                        <tr>
+                                            <td>不定位</td>
+                                            <td>不定位</td>
+                                            <td>一码不定位</td>
+                                            <td>从0-9中选择1个号码,每注由1个号码组成,只要开奖号码的百位、十位、个位中包含所选号码,即为中奖。投注方案:1;开奖号码:至少出现1个1;即中一码不定位一等奖。</td>
+                                            <td>投注方案:1;开奖号码:至少出现1个1;即中一码不定位一等奖。</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div id="tab3">
+                                <table class="table">
+                                    <tbody>
+                                        <tr>
+                                            <td>玩法群</td>
+                                            <td>玩法组</td>
+                                            <td>玩法</td>
+                                            <td>玩法说明</td>
+                                            <td>示例</td>
+                                        </tr>
+                                        <tr>
+                                            <td rowspan="4">前三</td>
+                                            <td rowspan="4">前三</td>
+                                            <td>前三直选复式</td>
+                                            <td>从第一位，第二位，第三位各选1个号码成一注，所选号码与当期开奖号码前三位相同，且顺序一致，即为中奖。</td>
+                                            <td>投注方案：01,02,03；开奖号码前三位：01,02,03；顺序一致，即中前三直选一等奖。</td>
+                                        </tr>
+                                        <tr>
+                                            <td>前三直选单式</td>
+                                            <td>从01-11共11个号码中手动输入3个号码组成一注，所投注的号码与当期开奖号码前三位相同，且顺序一致，即为中奖。</td>
+                                            <td>投注方案：01,02,03；开奖号码前三位：01,02,03；顺序一致，即中前三直选一等奖。</td>
+                                        </tr>
+                                        <tr>
+                                            <td>前三组选复式</td>
+                                            <td>从01-11共11个号码中选择3个号码，所选号码与当期开奖号码前三位相同，顺序不限，即为中奖。</td>
+                                            <td>投注方案：01,02,&nbsp;03；开奖号码前三位包含：01,02,03，顺序不限；即中前三组选一等奖。</td>
+                                        </tr>
+                                        <tr>
+                                            <td>前三组选单式</td>
+                                            <td>从01-11共11个号码中手动输入3个号码组成一注，所投注的号码与当期开奖号码前三位相同，且顺序不限，即为中奖。</td>
+                                            <td>投注方案：01,02,&nbsp;03；开奖号码前三位包含：01,02,03，顺序不限；即中前三组选一等奖。</td>
+                                        </tr>
+                                        <tr>
+                                            <td rowspan="4">前二</td>
+                                            <td rowspan="4">前二</td>
+                                            <td>前二直选复式</td>
+                                            <td>从第一位，第二位各选1个号码成一注，所选号码与当期开奖号码前二位相同，且顺序一致，即为中奖。</td>
+                                            <td>投注方案：01,02；开奖号码前二位：01,02；顺序一致，即中前二直选一等奖。</td>
+                                        </tr>
+                                        <tr>
+                                            <td>前二直选单式</td>
+                                            <td>从01-11共11个号码中手动输入2个号码组成一注，所投注的号码与当期开奖号码前二位相同，且顺序一致，即为中奖。</td>
+                                            <td>投注方案：01,02；开奖号码前二位：01,02；顺序一致，即中前二直选一等奖。</td>
+                                        </tr>
+                                        <tr>
+                                            <td>前二组选复式</td>
+                                            <td>从01-11共11个号码中选择2个号码，所选号码与当期开奖号码前二位相同，顺序不限，即为中奖。</td>
+                                            <td>投注方案：01,02；开奖号码前二位包含：01,02，顺序不限；即中前二组选一等奖。</td>
+                                        </tr>
+                                        <tr>
+                                            <td>前二组选单式</td>
+                                            <td>从01-11共11个号码中手动输入2个号码组成一注，所投注的号码与当期开奖号码前二位相同，顺序不限，即为中奖。</td>
+                                            <td>投注方案：01,02；开奖号码前二位包含：01,02，顺序不限；即中前二组选一等奖。</td>
+                                        </tr>
+                                        <tr>
+                                            <td>不定位</td>
+                                            <td>不定位</td>
+                                            <td>前三一码不定位</td>
+                                            <td>从01-11共11个号码中选择1个号码，每注由1个号码组成，只要当期开奖号码的前三位中包含所选号码，即为中奖。</td>
+                                            <td>投注方案：01；开奖号码前三位：包含01；即中一码不定位一等奖。</td>
+                                        </tr>
+                                        <tr>
+                                            <td>定位胆</td>
+                                            <td>定位胆</td>
+                                            <td>第1位、第2位、第3位</td>
+                                            <td>从第一位，第二位，第三位任意1个位置或多个位置上选择至少1个号码，所选号码与相同位置上的开奖号码一致，即为中奖。</td>
+                                            <td>投注方案：第一位投注01；开奖号码第一位：01；即中定位胆第一位一等奖。</td>
+                                        </tr>
+                                        <tr>
+                                            <td rowspan="2">趣味型</td>
+                                            <td rowspan="2">趣味型</td>
+                                            <td>定单双</td>
+                                            <td>从6种单双个数组合中选择1&nbsp;种组合，当期开奖号码的单双个数与所选单双组合一致，即为中奖。</td>
+                                            <td>投注方案：5单0双；开奖号码：出现5个单号0个双号(顺序不限)；即中定单双一等奖：5单0双。</td>
+                                        </tr>
+                                        <tr>
+                                            <td>猜中位</td>
+                                            <td>从3-9选择1个号码进行投注，5个开奖号码按照大小顺序排列后，所选号码与顺序第3个号码相同，即为中奖。</td>
+                                            <td>投注方案：中位数为03；开奖号码：出现03，顺序不限，依照数字大小顺序排列后，中位数为03 ：**、**、03、**、**,即中猜中位一等奖 。</td>
+                                        </tr>
+                                        <tr>
+                                            <td rowspan="8">任选复式</td>
+                                            <td rowspan="8">任选复式</td>
+                                            <td>任选1中1</td>
+                                            <td>从01-11共11个号码中选择1个号码组成一注进行购买，只要当期开奖号码包含所选的号码，即为中奖。</td>
+                                            <td>投注方案：01；开奖号码包含：01，顺序不限；即中任选一中一一等奖。</td>
+                                        </tr>
+                                        <tr>
+                                            <td>任选2中2</td>
+                                            <td>从01-11共11个号码中选择2个号码组成一注进行购买，只要当期开奖号码全部包含所选的2个号码，即为中奖。</td>
+                                            <td>投注方案：01,02；开奖号码包含：01,02，顺序不限；即中任选二中二一等奖。</td>
+                                        </tr>
+                                        <tr>
+                                            <td>任选3中3</td>
+                                            <td>从01-11共11个号码中选择3个号码组成一注进行购买，只要当期开奖号码全部包含所选的3个号码，即为中奖。</td>
+                                            <td>投注方案：01,02,03；开奖号码包含：01,02,03，顺序不限；即中任选三中三一等奖。</td>
+                                        </tr>
+                                        <tr>
+                                            <td>任选4中4</td>
+                                            <td>从01-11共11个号码中选择4个号码组成一注进行购买，只要当期开奖号码全部包含所选的4个号码，即为中奖。</td>
+                                            <td>投注方案：01,02,03,04；开奖号码包含：01,02,03,04，顺序不限；即中任选四中四一等奖。</td>
+                                        </tr>
+                                        <tr>
+                                            <td>任选5中5</td>
+                                            <td>从01-11共11个号码中选择5个号码组成一注进行购买，只要当期开奖号码全部包含所选的5个号码，即为中奖。</td>
+                                            <td>投注方案：01,02,03,04,05；开奖号码：01,02,03,04,05，顺序不限；即中任选五中五一等奖。</td>
+                                        </tr>
+                                        <tr>
+                                            <td>任选6中5</td>
+                                            <td>从01-11共11个号码中选择6个号码组成一注进行购买，只要所选的6个号码当中，包含当期全部5个开奖号码，即为中奖。</td>
+                                            <td>投注方案：01,02,03,04,05,06；开奖号码：01,02,03,04,05，顺序不限；即中任选六中五一等奖。</td>
+                                        </tr>
+                                        <tr>
+                                            <td>任选7中5</td>
+                                            <td>从01-11共11个号码中选择7个号码组成一注进行购买，只要所选的7个号码当中，包含当期全部5个开奖号码，即为中奖。</td>
+                                            <td>投注方案：01,02,03,04,05,06,07；开奖号码：01,02,03,04,05，顺序不限；即中任选七中五一等奖。</td>
+                                        </tr>
+                                        <tr>
+                                            <td>任选8中5</td>
+                                            <td>从01-11共11个号码中选择8个号码组成一注进行购买，只要所选的8个号码当中，包含当期全部5个开奖号码，即为中奖。</td>
+                                            <td>投注方案：01,02,03,04,05,06,07,08；开奖号码：01,02,03,04,05，顺序不限；即中任选八中五一等奖。</td>
+                                        </tr>
+                                        <tr>
+                                            <td rowspan="8">任选单式</td>
+                                            <td rowspan="8">任选单式</td>
+                                            <td>任选1中1</td>
+                                            <td>从01-11中手动输入1个号码进行购买，只要当期开奖号码包含所投注的号码，即为中奖。</td>
+                                            <td>投注方案：01；开奖号码包含：01，顺序不限；即中任选一中一一等奖。</td>
+                                        </tr>
+                                        <tr>
+                                            <td>任选2中2</td>
+                                            <td>从01-11中手动输入2个号码进行购买，只要当期开奖号码全部包含所投注的2个号码，即为中奖。</td>
+                                            <td>投注方案：01,02；开奖号码包含：01,02，顺序不限；即中任选二中二一等奖。</td>
+                                        </tr>
+                                        <tr>
+                                            <td>任选3中3</td>
+                                            <td>从01-11中手动输入3个号码进行购买，只要当期开奖号码全部包含所投注的3个号码，即为中奖。</td>
+                                            <td>投注方案：01,02,03；开奖号码包含：01,02,03，顺序不限；即中任选三中三一等奖。</td>
+                                        </tr>
+                                        <tr>
+                                            <td>任选4中4</td>
+                                            <td>从01-11中手动输入4个号码进行购买，只要当期开奖号码全部包含所投注的4个号码，即为中奖。</td>
+                                            <td>投注方案：01,02,03,04；开奖号码包含：01,02,03,04，顺序不限；即中任选四中四一等奖。</td>
+                                        </tr>
+                                        <tr>
+                                            <td>任选5中5</td>
+                                            <td>从01-11中手动输入5个号码进行购买，只要当期开奖号码全部包含所投注的5个号码，即为中奖。</td>
+                                            <td>投注方案：01,02,03,04,05；开奖号码：01,02,03,04,05，顺序不限；即中任选五中五一等奖。</td>
+                                        </tr>
+                                        <tr>
+                                            <td>任选6中5</td>
+                                            <td>从01-11中手动输入6个号码进行购买，只要所投注的6个号码当中，包含当期全部5个开奖号码，即为中奖。</td>
+                                            <td>投注方案：01,02,03,04,05,06；开奖号码：01,02,03,04,05，顺序不限；即中任选六中五一等奖。</td>
+                                        </tr>
+                                        <tr>
+                                            <td>任选7中5</td>
+                                            <td>从01-11中手动输入7个号码进行购买，只要所投注的7个号码当中，包含当期全部5个开奖号码，即为中奖。</td>
+                                            <td>投注方案：01,02,03,04,05,06,07；开奖号码：01,02,03,04,05，顺序不限；即中任选七中五一等奖。</td>
+                                        </tr>
+                                        <tr>
+                                            <td>任选8中5</td>
+                                            <td>从01-11中手动输入8个号码进行购买，只要所投注的8个号码当中，包含当期全部5个开奖号码，即为中奖。</td>
+                                            <td>投注方案：01,02,03,04,05,06,07,08；开奖号码：01,02,03,04,05，顺序不限；即中任选八中五一等奖。</td>
+                                        </tr>
+                                        <tr>
+                                            <td rowspan="7">任选胆拖</td>
+                                            <td rowspan="7">任选胆拖</td>
+                                            <td>任选2中2</td>
+                                            <td>从01-11共11个号码中至少选取2个号码进行投注，每注需至少包括1个胆码及1个拖码，胆码加拖码≥2。只要当期开奖号码全部包含所选单注2个号码，顺序不限，即为中奖。</td>
+                                            <td>投注方案：胆码为01，拖码为02；开奖号码包含：01,02，顺序不限；即中任选二中二一等奖。</td>
+                                        </tr>
+                                        <tr>
+                                            <td>任选3中3</td>
+                                            <td>从01-11共11个号码中至少选取3个号码进行投注，每注需至少包括1个胆码及1个拖码，胆码加拖码≥3。只要当期开奖号码全部包含所选单注3个号码，顺序不限，即为中奖。</td>
+                                            <td>投注方案：胆码为01，拖码为02,03；开奖号码包含：01,02,03，顺序不限；即中任选三中三一等奖。</td>
+                                        </tr>
+                                        <tr>
+                                            <td>任选4中4</td>
+                                            <td>从01-11共11个号码中至少选取4个号码进行投注，每注需至少包括1个胆码及1个拖码，胆码加拖码≥4。只要当期开奖号码全部包含所选单注4个号码，顺序不限，即为中奖。</td>
+                                            <td>投注方案：胆码为01，拖码为02,03,04；开奖号码包含：01,02,03,04，顺序不限；即中任选四中四一等奖。</td>
+                                        </tr>
+                                        <tr>
+                                            <td>任选5中5</td>
+                                            <td>从01-11共11个号码中至少选取5个号码进行投注，每注需至少包括1个胆码及1个拖码，胆码加拖码≥5。只要当期开奖号码全部包含所选单注5个号码，顺序不限，即为中奖。</td>
+                                            <td>投注方案：胆码为01，拖码为02,03,04,05；开奖号码：01,02,03,04,05，顺序不限；即中任选五中五一等奖。</td>
+                                        </tr>
+                                        <tr>
+                                            <td>任选6中5</td>
+                                            <td>从01-11共11个号码中至少选取6个号码进行投注，每注需至少包括1个胆码及1个拖码，胆码加拖码≥6。只要所选单注6个号码包含当期全部5个开奖号码，顺序不限，即为中奖。</td>
+                                            <td>投注方案：胆码为01，拖码为02,03,04,05,06；开奖号码：01,02,03,04,05，顺序不限；即中任选六中五一等奖。</td>
+                                        </tr>
+                                        <tr>
+                                            <td>任选7中5</td>
+                                            <td>从01-11共11个号码中至少选取7个号码进行投注，每注需至少包括1个胆码及1个拖码，胆码加拖码≥7。只要所选单注7个号码包含当期全部5个开奖号码，顺序不限，即为中奖。</td>
+                                            <td>投注方案：胆码为01，拖码为02,03,04,05,06,07；开奖号码：01,02,03,04,05，顺序不限；即中任选七中五一等奖。</td>
+                                        </tr>
+                                        <tr>
+                                            <td>任选8中5</td>
+                                            <td>从01-11共11个号码中至少选取8个号码进行投注，每注需至少包括1个胆码及1个拖码，胆码加拖码≥8。只要所选单注8个号码包含当期全部5个开奖号码，顺序不限，即为中奖。</td>
+                                            <td>投注方案：胆码为01，拖码为02,03,04,05,06,07,08；开奖号码：01,02,03,04,05，顺序不限；即中任选八中五一等奖。</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <script>
+                        function resetTabs() {
+                            $("#content > div").hide(); //Hide all content
+                            $("#tabs a").attr("id", ""); //Reset id's
+                        }
+
+                        var myUrl = window.location.href; //get URL
+                        var myUrlTab = myUrl.substring(myUrl.indexOf("#")); // For localhost/tabs.html#tab2, myUrlTab = #tab2
+                        var myUrlTabName = myUrlTab.substring(0, 4); // For the above example, myUrlTabName = #tab
+
+                        (function() {
+                            $("#content > div").hide(); // Initially hide all content
+                            $("#tabs li:first a").attr("id", "current"); // Activate first tab
+                            $("#content > div:first").fadeIn(); // Show first tab content
+
+                            $("#tabs a").on("click", function(e) {
+                                e.preventDefault();
+                                if ($(this).attr("id") == "current") { //detection for current tab
+                                    return
+                                } else {
+                                    resetTabs();
+                                    $(this).attr("id", "current"); // Activate this
+                                    $($(this).attr('name')).fadeIn(); // Show content for current tab
+                                }
+                            });
+
+                            for (i = 1; i <= $("#tabs li").length; i++) {
+                                if (myUrlTab == myUrlTabName + i) {
+                                    resetTabs();
+                                    $("a[name='" + myUrlTab + "']").attr("id", "current"); // Activate url tab
+                                    $(myUrlTab).fadeIn(); // Show url tab content
+                                }
+                            }
+                        })()
+                        </script>
+                    </div>
+                    <div id="menu2" class="tab-pane fade">
+                        <h3>菜单 2</h3>
+                        <p>这是菜单 2 显示的内容。这是菜单 2 显示的内容。这是菜单 2 显示的内容。</p>
+                    </div>
+                    <div id="menu3" class="tab-pane fade">
+                        <h3>菜单 3</h3>
+                        <p>这是菜单 3 显示的内容。这是菜单 3 显示的内容。这是菜单 3 显示的内容。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+	<!-- /主体 -->
+
+	<!-- 底部 -->
+	
+
+
+	<!-- /底部 -->
+</body>
+
+</html>

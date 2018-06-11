@@ -1,0 +1,11 @@
+<?php if (!defined('THINK_PATH')) exit();?><div class="tongzhiview">
+	<div class="tongzhiviewtitle">
+		<?php echo ($info['title']); ?>
+	</div>
+	<div class="tongzhiviewinfo">
+		<span>发布时间：<?php echo date('Y/m/d H:i:s',$info['addTime']);?></span>
+	</div>
+	<div class="tongzhiviewtxt">
+		<?php echo nl2br($info['content']);?>
+	</div>
+</div>

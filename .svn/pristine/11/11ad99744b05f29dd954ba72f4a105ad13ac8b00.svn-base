@@ -1,0 +1,555 @@
+<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<META name="renderer" content="webkit">
+<META charset="utf-8">
+<META http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<META name="viewport" content="width=device-width, initial-scale=1.0">
+<title>添加银行－<?php echo S('WEB_NAME');?></title>
+
+<link href="/Public/Home/css/bootstrap.min.css" rel="stylesheet">
+<link href="/Public/Home/css/bootstrap-slider.all.css" rel="stylesheet">
+
+<link href="/Public/Home/css/nifty.min.css" rel="stylesheet">
+<link href="/Public/Home/css/font-awesome.min.css" rel="stylesheet">
+<link href="/Public/Home/css/bootstrap-datetimepicker.min.css" rel="stylesheet">
+<link href="/Public/Home/css/switchery.min.css" rel="stylesheet">
+<link href="/Public/Home/css/css.min.css" rel="stylesheet">
+<link href="/Public/Home/css/withdraw.css" rel="stylesheet">
+<link href="/Public/Home/css/comm.min.css" rel="stylesheet">
+<link href="/Public/Home/css/dataTables.bootstrap.min.css" rel="stylesheet">
+<link href="/Public/Home/css/dataTables.responsive.min.css" rel="stylesheet">
+<link rel="stylesheet" href="/Public/Home/css/select2.min.css">
+<meta name="GENERATOR" content="MSHTML 11.00.9600.16428">
+
+<!-- IE浏览器时需要以下js支持 -->
+
+<!-- 页面header钩子，一般用于加载插件CSS文件和代码 -->
+<?php echo hook('pageHeader');?>
+
+	
+	<!-- /头部 -->
+	
+
+    <!--<script src="/Public/Home/js/jquery.min.js"></script>-->
+    <script src="/Public/Home/js/jquery.min.js"></script>
+
+    <script src="/Public/Home/js/bootstrap.min.js"></script>
+
+
+    <script src="/Public/Home/js/bootstrap-datetimepicker.min.js"></script>
+    <script src="/Public/Home/js/bootstrap-datetimepicker.zh-CN.min.js"></script>
+    <script src="/Public/Home/js/nifty.min.js"></script>
+    <script src="/Public/Home/js/switchery.min.js"></script>
+    <script src="/Public/Home/js/md5.min.js"></script>
+    <script src="/Public/Home/js/common.min.js"></script>
+    <script src="/Public/Home/js/dataTables.min.js"></script>
+    <script src="/Public/Home/js/dataTables.bootstrap.min.js"></script>
+    <script src="/Public/Home/js/dataTables.responsive.min.js"></script>
+    <script src="/Public/Home/js/bootbox.min.js"></script>
+
+    <script src="/Public/Home/js/layer/layui/layui.js"></script>
+    <script src="/Public/Home/js/layer/laydate/laydate.js"></script>
+    <link rel="stylesheet" href="/Public/Home/js/layer/layui/css/layui.css">
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("body").click(
+                function toggle() {
+                    $("div#demo-set", window.top.document).removeClass("open");
+                    $(".mega-dropdown", window.top.document).removeClass("open");
+                    $(".dropdown", window.top.document).removeClass("open");
+                    $(".lskj").fadeOut(200);
+                }
+            );
+        });
+        $('.form_datetime').datetimepicker({
+            autoclose: 1,
+            todayBtn: 0,
+            minView: 2,
+            language: 'zh-CN',
+            format: 'yyyy-mm-dd hh:ii'
+        });
+        $('.form_datetime').focus(function () {
+            this.blur();
+        });
+    </script>
+
+
+
+
+</head>
+
+<body>
+
+	<!-- 头部 -->
+	
+
+
+
+
+	
+	<script src="/Public/Home/js/bankmanage.min.js"></script>
+	<script type="text/javascript">
+        function addBank() {
+//            var v_name = $('#Name').val();
+//            var v_card = $('#Number').val();
+            var v_code = $('#Code').val();
+            var v_pwd = $('#AddFundsPass').val();
+            if ($('#j-radioGALable').hasClass('active') && $('#j-validateType').css('visibility') == 'visible') {
+                if (v_code.length <= 0 || v_code.length != 6) {
+                    $('#validateGAInfo').html('谷歌动态密码输入错误！');
+                    return
+                }
+                $('#ValidateMode').val(1)
+            } else {
+                if (v_pwd.length <= 0) {
+                    $('#validateGAInfo').html('资金密码不能为空！');
+                    return
+                }
+                $('#ValidateMode').val(0);
+            }
+//            v_card = v_card.replace(/[ ]/g, '');
+            var href = $('#submitBtnAddBank').attr('action');
+            $.ajax({
+                type: "POST",
+                url: href,
+                data: { username: $('#Name').val(), account: $('#Number').val(),bankId: $('#bankId').val()
+                    ,coinPassword: $('#AddFundsPass').val(), bankDetail:$('#bankDetail').val() },
+                dataType: "json",
+                global: false,
+                success: function (result) {
+                    if(result.status){
+                        window.location.reload();
+                    }
+                    else{
+                        $('#validateGAInfo').html(result.info);
+                    }
+                }, error: function () {
+                    $.niftyNoty({ type: 'danger', message: '请稍后再试', container: 'floating', closeBtn: true, timer: 3000 });
+                }
+            });
+        };
+	</script>
+
+	<!-- 主体 -->
+	
+<style type="text/css">
+        .form-horizontal .has-feedback .form-control-feedback {
+            top: 7px;
+            right: 10px;
+        }
+        .modal-footer button {
+            min-width: 100px;
+            font-size: 16px;
+            margin-left: 20px;
+            margin-right: 20px;
+        }
+        .range {
+            display: table;
+            width: 100%;
+            border-radius: 5px;
+            margin-top: 10px;
+            height: 30px;
+            box-shadow: 0px 2px 3px #ccc inset;
+            background-color: #ebebeb;
+        }
+            .range span {
+                display: table-cell;
+                width: 50px;
+                vertical-align: middle;
+                text-align: center;
+            }
+            .range > div {
+                padding: 0;
+            }
+        #demo-range-def-val {
+            color: #fc4c23;
+        }
+        #demo-range-def {
+            margin: 0;
+            margin-top: 10px;
+        }
+        .noUi-connect {
+            background: linear-gradient(to right,#fe9732, #f35a31);
+        }
+        .noUi-handle {
+            background: linear-gradient(#fe9732, #f35a31);
+            border: 1px #ed4f2a solid;
+            box-shadow: 0px 0px 3px #e94b26;
+        }
+        .formul {
+            width: 520px;
+            overflow: hidden;
+            padding-bottom: 10px;
+        }
+            .formul li {
+                list-style: none;
+                padding-top: 5px;
+            }
+                .formul li p {
+                    height: 36px;
+                    line-height: 36px;
+                    position: relative;
+                }
+                .formul li > span {
+                    display: block;
+                    padding-bottom: 10px;
+                }
+                .formul li p i {
+                    display: inline-block;
+                    width: 36px;
+                    height: 36px;
+                    text-align: center;
+                    font-size: 18px;
+                    line-height: 36px;
+                    color: #ccc;
+                    position: absolute;
+                    left: 0;
+                    top: 2px;
+                    padding: 0;
+                }
+                .formul li p input {
+                    border: 0;
+                    width: 100%;
+                    background-color: #fff;
+                    border: 1px #ddd solid;
+                    border-radius: 2px;
+                    box-sizing: border-box;
+                    padding-left: 40px;
+                    transition: border .5s;
+                }
+                    .formul li p input:focus {
+                        border: 1px #489aed solid;
+                        box-shadow: 0px 0px 5px #eee;
+                    }
+                .formul li p em {
+                    position: absolute;
+                    right: 10px;
+                    font-style: normal;
+                    color: #489aed;
+                }
+        .control-label {
+            line-height: 24px;
+        }
+        .form-checkbox.form-normal.form-primary:hover:before, .form-radio.form-normal.form-primary.active:before, .form-checkbox.form-normal.form-primary:not(.active):hover:after {
+            border-color: #f37032;
+        }
+        .form-checkbox.form-normal.form-primary.active:before, .form-radio.form-normal.form-primary.active:after {
+            background-color: #f37032;
+        }
+        .banklist {
+            margin-bottom: 10px;
+        }
+        .addbank {
+            background-color: #fef3f0;
+            border: 1px #ee744e dashed;
+        }
+            .addbank > a {
+                display: block;
+                text-align: center;
+                padding-top: 30px;
+            }
+                .addbank > a > i {
+                    display: inline-block;
+                    width: 48px;
+                    height: 48px;
+                    text-align: center;
+                    line-height: 48px;
+                    font-size: 20px;
+                    background-color: #ed6c44;
+                    border-radius: 50%;
+                    color: #fff;
+                    border: 3px #fff solid;
+                    box-shadow: 0px 2px 3px #ddd;
+                }
+                .addbank > a > span {
+                    display: block;
+                    text-align: center;
+                    font-size: 16px;
+                    color: #ed6c44;
+                    padding-top: 10px;
+                }
+                .addbank > a:hover span {
+                    color: #000;
+                }
+        .bankbox {
+            height: 145px;
+            position: relative;
+            border-radius: 5px;
+            box-shadow: 0px 0px 5px #eee;
+            margin-bottom: 10px;
+        }
+            .bankbox > div {
+                height: 90px;
+                color: #fff;
+                background-image: url('/images/bank/dot.png');
+                background-position: left bottom;
+                border-radius: 5px 5px 0px 0px;
+                background-repeat: repeat-x;
+                font-size: 16px;
+            }
+        .bank_3050000 {
+            background-color: #39b47b;
+        }
+        .bank_1050000 {
+            background-color: #3872d8;
+        }
+        .bank_1040000 {
+            background-color: #f85948;
+        }
+        .bank_1020000 {
+            background-color: #e53e38;
+        }
+        .bank_1030000 {
+            background-color: #00c8aa;
+        }
+        .bank_3080000 {
+            background-color: #eb2929;
+        }
+        .bank_3040000 {
+            background-color: #e83851;
+        }
+        .bank_3100000 {
+            background-color: #1a6fc1;
+        }
+        .bank_3090000 {
+            background-color: #1e5aca;
+        }
+        .bank_3070010 {
+            background-color: #ff7124;
+        }
+        .bank_3060000 {
+            background-color: #e91e3b;
+        }
+        .bank_3030000 {
+            background-color: #a641c5;
+        }
+        .bank_3020000 {
+            background-color: #d71820;
+        }
+        .bank_1000000 {
+            background-color: #25c36c;
+        }
+        .bank_3010000 {
+            background-color: #f25738;
+        }
+        .bankbox > div img {
+            float: left;
+            display: inline-block;
+            text-align: center;
+            width: 65px;
+            height: 65px;
+            margin: 10px;
+        }
+        .bankbox > div strong {
+            display: block;
+            padding-top: 18px;
+            font-size: 18px;
+            font-weight: normal;
+        }
+        .bankbox > div label {
+            color: rgba(255,255,255,.7);
+        }
+        .bankbox > div em {
+            position: absolute;
+            right: 15px;
+            top: 15px;
+            font-style: normal;
+        }
+        .bankbox > p {
+            color: #000;
+            font-size: 14px;
+            line-height: 50px;
+            padding-left: 15px;
+            border: 1px #ddd solid;
+            border-top: 0;
+            border-radius: 0px 0px 5px 5px;
+        }
+            .bankbox > p input {
+                float: right;
+                width: 36px;
+                height: 36px;
+                display: inline-block;
+                margin-top: 10px;
+                margin-right: 5px;
+                background-image: url('/images/bank/rx.png') !important;
+                background-color: transparent;
+                background-position: center center;
+                background-repeat: no-repeat;
+                border: 0;
+                cursor: pointer;
+            }
+                .bankbox > p input:hover {
+                    background-image: url('/images/bank/rx2.png') !important;
+                }
+        .mbk {
+            position: absolute;
+            right: -50px;
+            top: -50px;
+            width: 280px;
+            padding-bottom: 3px;
+            padding-top: 2px;
+            background-color: #999;
+            z-index: 99;
+            display: none;
+        }
+            .mbk p {
+                text-align: center;
+            }
+                .mbk p input {
+                    border: 0;
+                    background-color: #0067c6;
+                    border-radius: 5px;
+                    color: #fff;
+                    height: 30px;
+                    line-height: 30px;
+                    width: 90px;
+                    text-align: center;
+                    margin: auto;
+                }
+</style>
+<meta name="GENERATOR" content="MSHTML 11.00.9600.16428">
+<div class="effect mainnav-lg mainnav-fixed navbar-fixed footer-fixed" id="container">
+	<div id="page-content">
+		<div class="panel">
+			<div class="panel-heading">
+				<h3 class="panel-title"><img alt="img" src="/Public/Home/images/fei_game/card.png">我的银行卡</h3>
+			</div>
+			<form class="form-horizontal">
+				<div class="panel-body">
+					<div class="mminfo">
+						<div class="mminfohead">
+							<span><i class="fa fa-exclamation"></i>温馨提示</span>
+						</div>
+						<div class="mminfobox">
+							<div class="row">
+								<div class="col-md-4">
+									                            最多可添加
+									<font class="text-primary" style="font-size: 18px; font-weight: bold;">3 </font>张银行卡。
+								</div>
+								<div class="col-md-4">
+									                            当前还可以添加
+									<font class="text-danger" style="font-size: 18px; font-weight: bold;"><?php echo (3-count($mybank));?> </font>张银行卡。
+								</div>
+							</div>
+						</div>
+					</div>					
+					<div class="row banklist" data-toggle="modal" data-target="#add-modal">
+						<div class="col-md-4">
+							<div class="bankbox addbank">
+								<a id="addBank" href="javascript:;" <?php if(count($mybank)>2) echo 'no="1"'; ?>>
+									<i class="fa fa-plus"></i>
+									<span id="addBankInfo">添加新的银行卡</span>
+								</a>
+							</div>
+						</div>
+						<?php foreach($mybank as $b){ ?>
+							<div class="col-md-4">
+								<div class="bankbox">
+									<div class="bank_1020000">
+										<img alt="" src="/Public/Home/images/fei_game/tx.png"><strong><?php echo ($banks[$b['bankId']]['name']); ?></strong>
+										<label>尾号<?=preg_replace('/^.*(\w{4})$/', '\1', $b['account'])?></label>
+										<em>持卡人：<?=mb_substr($b['username'],0,1,'utf-8').'**' ?></em>
+									</div>
+									<p>
+										绑定时间：<?php echo date('Y/m/d H:i:s',$b['actionTime']);?>
+									</p>
+								</div>
+							</div>
+						<?php } ?>
+					</div>					
+				</div>
+			</form>
+		</div>
+		<form id="addbankcard" role="form" action="/safety/bankmanage" method="post">
+			<input name="IsGA" id="IsGA" type="hidden" value="False" data-val-required="IsGA 字段是必需的。" data-val="true">
+			<input name="IsCard" id="IsCard" type="hidden" value="False" data-val-required="IsCard 字段是必需的。" data-val="true">
+			<input name="ValidateMode" id="ValidateMode" type="hidden" value="1" data-val-required="ValidateMode 字段是必需的。" data-val="true">
+			<div tabindex="-2" class="modal fade" id="add-modal" role="dialog" aria-hidden="true" aria-labelledby="add-modal">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header">
+							<button class="close" type="button" data-dismiss="modal"><span aria-hidden="true">×</span></button>
+							<h4 class="modal-title text-danger"><i class="fa fa-cc-discover fa-lg"></i>  
+                                添加银行卡
+							</h4>
+						</div>
+						<div class="modal-body">
+							<div class="row">
+								<div class="col-sm-5">									
+									<div id="j-validateFristRemark">
+										<br>
+										<br>
+										<span class="text-2x text-primary text-bold" >添加银行卡不需要验证。如资金密码没有设置，请<a href="<?php echo U('user/password');?>" style="color:red">点击我</a>，直接进入资金密码设置。</span>
+									</div>
+								</div>
+								<div class="col-sm-7">									
+									<div id="addBankDiv" style="margin-left: 15px; display: block;">
+										<div class="form-group">
+											<label class="control-label text-bold">请输入持卡人</label>
+											<input name="Name" class="form-control" id="Name" style="width: 300px; height: 42px;" type="text" maxlength="20" autocomplete="off">
+										</div>
+										<div class="form-group">
+											<label class="control-label text-bold">请输入银行卡号</label>
+											<input name="KindId" id="KindId" type="hidden" data-val-required="KindId 字段是必需的。" data-val="true">
+											<input name="BankId" id="BankId" type="hidden">
+											<input name="Number" class="form-control" id="Number" style="width: 300px; height: 42px;" type="text" maxlength="23" autocomplete="off">
+											<span class="fa fa-cc-discover fa-lg form-control-feedback text-danger" id="BankIcon" style="margin-top: 125px; margin-right: 25px;"></span>
+										</div>
+										
+										<div class="form-group" id="j-inputGAPwd">
+											<label class="control-label text-bold">请输入银行类型</label>
+											<select id="bankId" name="bankId" style="width: 300px; height: 42px;" >
+											<?php foreach($banks as $bank){ ?>
+												<option value="<?=$bank['id']?>"><?=$bank['name']?></option>
+											<?php } ?>
+											</select>
+										</div>
+										<div class="form-group">
+											<label class="control-label text-bold">详细开户支行/分理处</label>
+											<input name="KindId" id="KindId" type="hidden" data-val-required="KindId 字段是必需的。" data-val="true">
+											<input name="BankId" id="BankId" type="hidden">
+											<input name="bankDetail" class="form-control" id="bankDetail" style="width: 300px; height: 42px;" type="text" maxlength="30" autocomplete="off">
+											<span class="fa fa-cc-discover fa-lg form-control-feedback text-danger" id="BankIcon" style="margin-top: 125px; margin-right: 25px;"></span>
+										</div>                                        
+										<div class="form-group" id="j-inputFundsPwd">
+											<label class="control-label text-bold">请输入资金密码</label>
+											<input name="AddFundsPass" class="form-control" id="AddFundsPass" style="width: 300px; height: 42px;" type="password" maxlength="20" autocomplete="off">
+										</div>
+										<div class="form-group">
+											<div class="input-group">
+												<span class="text-danger text-bold" id="validateGAInfo"></span>
+											</div>
+										</div>
+										<div style="text-align: center;">
+											<input name="OperatType" id="OperatType" type="hidden" value="1" data-val-required="OperatType 字段是必需的。" data-val="true">
+											<button class="btn btn-primary btn-labeled fa fa-lg" id="submitBtnAddBank" onclick="addBank();" style="width: 150px; height: 35px;" type="button" action="<?php echo U('user/setCBAccount');?>">确    定</button>
+											<button class="btn btn-danger btn-labeled fa fa-lg" style="width: 150px; height: 35px;" type="button" data-dismiss="modal">返    回</button>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<input name="__RequestVerificationToken" type="hidden" value="CfDJ8Ktgxm2FAlNEsoI7VoMQlWn0BqRylmAZfow4af6diR26wV1xla7ErMx2GvjCJUCaoJrK1lWk7idLtbtVoV3hit3MyF9f4N4zPU-s9fG2ySQLCrRewvjuOBxWk5Y2LzhF1B44rQP0lIK4F3Vj0k2mpT-rhGcmR8GShrTR_6qqyuDsQRmqLn1tm-9glgzHaI-OEw">
+		</form>
+		<input id="hdVC" type="hidden" value="71643a98dc3680701ad1ac0c4ff790bb">
+		<input id="hdNotVC" type="hidden" value="71643a98dc3680701ad1ac0c4ff790bb">
+	</div>
+</div>
+
+
+	<!-- /主体 -->
+
+	<!-- 底部 -->
+	
+
+
+	<!-- /底部 -->
+</body>
+
+</html>

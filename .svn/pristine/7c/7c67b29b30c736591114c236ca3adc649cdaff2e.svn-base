@@ -1,0 +1,7 @@
+<extend name="Base/common" />
+<block name="title">
+    <title>在线充值－{:S('WEB_NAME')}</title>
+</block>
+<block name='body'>
+    {$payLinks}
+</block>

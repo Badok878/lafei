@@ -1,0 +1,607 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="b6060525-a7a0-4bb1-9dfa-57eb4e2ad756" name="Default" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf />
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>220.164.111.48</find>
+    </findStrings>
+    <replaceStrings>
+      <replace />
+    </replaceStrings>
+    <dirStrings>
+      <dir>$PROJECT_DIR$/Application</dir>
+      <dir>$PROJECT_DIR$</dir>
+    </dirStrings>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/Application/Common/Conf/config.php" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="NodeModulesDirectoryManager">
+    <handled-path value="$PROJECT_DIR$/html/kj/node_modules22/npm/node_modules" />
+  </component>
+  <component name="NodePackageJsonFileManager">
+    <packageJsonPaths>
+      <path value="$PROJECT_DIR$/html/kj/node_modules/mysql/node_modules/hashish/node_modules/traverse/package.json" />
+      <path value="$PROJECT_DIR$/html/kj/node_modules/mysql/node_modules/hashish/package.json" />
+      <path value="$PROJECT_DIR$/html/kj/node_modules/mysql/package.json" />
+      <path value="$PROJECT_DIR$/html/kj/node_modules/mysqlv2/package.json" />
+      <path value="$PROJECT_DIR$/html/kj/node_modules/npm/node_modules/abbrev/package.json" />
+      <path value="$PROJECT_DIR$/html/kj/node_modules/npm/node_modules/ansi/package.json" />
+      <path value="$PROJECT_DIR$/html/kj/node_modules/npm/node_modules/archy/package.json" />
+      <path value="$PROJECT_DIR$/html/kj/node_modules/npm/node_modules/block-stream/package.json" />
+      <path value="$PROJECT_DIR$/html/kj/node_modules/npm/node_modules/child-process-close/package.json" />
+      <path value="$PROJECT_DIR$/html/kj/node_modules/npm/node_modules/chmodr/package.json" />
+      <path value="$PROJECT_DIR$/html/kj/node_modules/npm/node_modules/chownr/package.json" />
+      <path value="$PROJECT_DIR$/html/kj/node_modules/npm/node_modules/cmd-shim/package.json" />
+      <path value="$PROJECT_DIR$/html/kj/node_modules/npm/node_modules/editor/package.json" />
+      <path value="$PROJECT_DIR$/html/kj/node_modules/npm/node_modules/fstream-npm/node_modules/fstream-ignore/package.json" />
+      <path value="$PROJECT_DIR$/html/kj/node_modules/npm/node_modules/fstream-npm/package.json" />
+      <path value="$PROJECT_DIR$/html/kj/node_modules/npm/node_modules/fstream/package.json" />
+      <path value="$PROJECT_DIR$/html/kj/node_modules/npm/node_modules/glob/package.json" />
+      <path value="$PROJECT_DIR$/html/kj/node_modules/npm/node_modules/graceful-fs/package.json" />
+      <path value="$PROJECT_DIR$/html/kj/node_modules/npm/node_modules/inherits/package.json" />
+      <path value="$PROJECT_DIR$/html/kj/node_modules/npm/node_modules/ini/package.json" />
+      <path value="$PROJECT_DIR$/html/kj/node_modules/npm/node_modules/init-package-json/node_modules/promzard/example/npm-init/package.json" />
+      <path value="$PROJECT_DIR$/html/kj/node_modules/npm/node_modules/init-package-json/node_modules/promzard/package.json" />
+      <path value="$PROJECT_DIR$/html/kj/node_modules/npm/node_modules/init-package-json/package.json" />
+      <path value="$PROJECT_DIR$/html/kj/node_modules/npm/node_modules/lockfile/package.json" />
+      <path value="$PROJECT_DIR$/html/kj/node_modules/npm/node_modules/lru-cache/package.json" />
+      <path value="$PROJECT_DIR$/html/kj/node_modules/npm/node_modules/minimatch/node_modules/sigmund/package.json" />
+      <path value="$PROJECT_DIR$/html/kj/node_modules/npm/node_modules/minimatch/package.json" />
+      <path value="$PROJECT_DIR$/html/kj/node_modules/npm/node_modules/mkdirp/package.json" />
+      <path value="$PROJECT_DIR$/html/kj/node_modules/npm/node_modules/node-gyp/package.json" />
+      <path value="$PROJECT_DIR$/html/kj/node_modules/npm/node_modules/nopt/package.json" />
+      <path value="$PROJECT_DIR$/html/kj/node_modules/npm/node_modules/npm-registry-client/node_modules/couch-login/package.json" />
+      <path value="$PROJECT_DIR$/html/kj/node_modules/npm/node_modules/npm-registry-client/package.json" />
+      <path value="$PROJECT_DIR$/html/kj/node_modules/npm/node_modules/npm-user-validate/package.json" />
+      <path value="$PROJECT_DIR$/html/kj/node_modules/npm/node_modules/npmconf/node_modules/config-chain/node_modules/proto-list/package.json" />
+      <path value="$PROJECT_DIR$/html/kj/node_modules/npm/node_modules/npmconf/node_modules/config-chain/package.json" />
+      <path value="$PROJECT_DIR$/html/kj/node_modules/npm/node_modules/npmconf/package.json" />
+      <path value="$PROJECT_DIR$/html/kj/node_modules/npm/node_modules/npmlog/package.json" />
+      <path value="$PROJECT_DIR$/html/kj/node_modules/npm/node_modules/once/package.json" />
+      <path value="$PROJECT_DIR$/html/kj/node_modules/npm/node_modules/opener/package.json" />
+      <path value="$PROJECT_DIR$/html/kj/node_modules/npm/node_modules/osenv/package.json" />
+      <path value="$PROJECT_DIR$/html/kj/node_modules/npm/node_modules/read-installed/package.json" />
+      <path value="$PROJECT_DIR$/html/kj/node_modules/npm/node_modules/read-package-json/node_modules/normalize-package-data/node_modules/github-url-from-git/package.json" />
+      <path value="$PROJECT_DIR$/html/kj/node_modules/npm/node_modules/read-package-json/node_modules/normalize-package-data/package.json" />
+      <path value="$PROJECT_DIR$/html/kj/node_modules/npm/node_modules/read-package-json/package.json" />
+      <path value="$PROJECT_DIR$/html/kj/node_modules/npm/node_modules/read/node_modules/mute-stream/package.json" />
+      <path value="$PROJECT_DIR$/html/kj/node_modules/npm/node_modules/read/package.json" />
+      <path value="$PROJECT_DIR$/html/kj/node_modules/npm/node_modules/request/node_modules/aws-sign/package.json" />
+      <path value="$PROJECT_DIR$/html/kj/node_modules/npm/node_modules/request/node_modules/cookie-jar/package.json" />
+      <path value="$PROJECT_DIR$/html/kj/node_modules/npm/node_modules/request/node_modules/forever-agent/package.json" />
+      <path value="$PROJECT_DIR$/html/kj/node_modules/npm/node_modules/request/node_modules/form-data/node_modules/async/package.json" />
+      <path value="$PROJECT_DIR$/html/kj/node_modules/npm/node_modules/request/node_modules/form-data/node_modules/combined-stream/node_modules/delayed-stream/package.json" />
+      <path value="$PROJECT_DIR$/html/kj/node_modules/npm/node_modules/request/node_modules/form-data/node_modules/combined-stream/package.json" />
+      <path value="$PROJECT_DIR$/html/kj/node_modules/npm/node_modules/request/node_modules/form-data/package.json" />
+      <path value="$PROJECT_DIR$/html/kj/node_modules/npm/node_modules/request/node_modules/hawk/node_modules/boom/node_modules/hoek/package.json" />
+      <path value="$PROJECT_DIR$/html/kj/node_modules/npm/node_modules/request/node_modules/hawk/node_modules/boom/package.json" />
+      <path value="$PROJECT_DIR$/html/kj/node_modules/npm/node_modules/request/node_modules/hawk/node_modules/cryptiles/package.json" />
+      <path value="$PROJECT_DIR$/html/kj/node_modules/npm/node_modules/request/node_modules/hawk/node_modules/hoek/package.json" />
+      <path value="$PROJECT_DIR$/html/kj/node_modules/npm/node_modules/request/node_modules/hawk/node_modules/sntp/node_modules/hoek/package.json" />
+      <path value="$PROJECT_DIR$/html/kj/node_modules/npm/node_modules/request/node_modules/hawk/node_modules/sntp/package.json" />
+      <path value="$PROJECT_DIR$/html/kj/node_modules/npm/node_modules/request/node_modules/hawk/package.json" />
+      <path value="$PROJECT_DIR$/html/kj/node_modules/npm/node_modules/request/node_modules/http-signature/node_modules/asn1/package.json" />
+      <path value="$PROJECT_DIR$/html/kj/node_modules/npm/node_modules/request/node_modules/http-signature/node_modules/assert-plus/package.json" />
+      <path value="$PROJECT_DIR$/html/kj/node_modules/npm/node_modules/request/node_modules/http-signature/node_modules/ctype/package.json" />
+      <path value="$PROJECT_DIR$/html/kj/node_modules/npm/node_modules/request/node_modules/http-signature/package.json" />
+      <path value="$PROJECT_DIR$/html/kj/node_modules/npm/node_modules/request/node_modules/json-stringify-safe/package.json" />
+      <path value="$PROJECT_DIR$/html/kj/node_modules/npm/node_modules/request/node_modules/mime/package.json" />
+      <path value="$PROJECT_DIR$/html/kj/node_modules/npm/node_modules/request/node_modules/node-uuid/package.json" />
+      <path value="$PROJECT_DIR$/html/kj/node_modules/npm/node_modules/request/node_modules/oauth-sign/package.json" />
+      <path value="$PROJECT_DIR$/html/kj/node_modules/npm/node_modules/request/node_modules/qs/package.json" />
+      <path value="$PROJECT_DIR$/html/kj/node_modules/npm/node_modules/request/node_modules/tunnel-agent/package.json" />
+      <path value="$PROJECT_DIR$/html/kj/node_modules/npm/node_modules/request/package.json" />
+      <path value="$PROJECT_DIR$/html/kj/node_modules/npm/node_modules/retry/package.json" />
+      <path value="$PROJECT_DIR$/html/kj/node_modules/npm/node_modules/rimraf/package.json" />
+      <path value="$PROJECT_DIR$/html/kj/node_modules/npm/node_modules/semver/package.json" />
+      <path value="$PROJECT_DIR$/html/kj/node_modules/npm/node_modules/sha/package.json" />
+      <path value="$PROJECT_DIR$/html/kj/node_modules/npm/node_modules/slide/package.json" />
+      <path value="$PROJECT_DIR$/html/kj/node_modules/npm/node_modules/tar/package.json" />
+      <path value="$PROJECT_DIR$/html/kj/node_modules/npm/node_modules/uid-number/package.json" />
+      <path value="$PROJECT_DIR$/html/kj/node_modules/npm/node_modules/which/package.json" />
+      <path value="$PROJECT_DIR$/html/kj/node_modules/npm/package.json" />
+      <path value="$PROJECT_DIR$/html/kj/node_modules/npm/test/disabled/bundlerecurs/package.json" />
+      <path value="$PROJECT_DIR$/html/kj/node_modules/npm/test/disabled/change-bin-1/package.json" />
+      <path value="$PROJECT_DIR$/html/kj/node_modules/npm/test/disabled/change-bin-2/package.json" />
+      <path value="$PROJECT_DIR$/html/kj/node_modules/npm/test/disabled/failer/package.json" />
+      <path value="$PROJECT_DIR$/html/kj/node_modules/npm/test/disabled/fast/package.json" />
+      <path value="$PROJECT_DIR$/html/kj/node_modules/npm/test/disabled/package-bar/package.json" />
+      <path value="$PROJECT_DIR$/html/kj/node_modules/npm/test/disabled/package-config/package.json" />
+      <path value="$PROJECT_DIR$/html/kj/node_modules/npm/test/disabled/package-foo/package.json" />
+      <path value="$PROJECT_DIR$/html/kj/node_modules/npm/test/disabled/slow/package.json" />
+      <path value="$PROJECT_DIR$/html/kj/node_modules/npm/test/disabled/startstop/package.json" />
+      <path value="$PROJECT_DIR$/html/kj/node_modules/npm/test/packages/npm-test-array-bin/package.json" />
+      <path value="$PROJECT_DIR$/html/kj/node_modules/npm/test/packages/npm-test-blerg/package.json" />
+      <path value="$PROJECT_DIR$/html/kj/node_modules/npm/test/packages/npm-test-blerg3/package.json" />
+      <path value="$PROJECT_DIR$/html/kj/node_modules/npm/test/packages/npm-test-bundled-git/package.json" />
+      <path value="$PROJECT_DIR$/html/kj/node_modules/npm/test/packages/npm-test-dir-bin/package.json" />
+      <path value="$PROJECT_DIR$/html/kj/node_modules/npm/test/packages/npm-test-env-reader/package.json" />
+      <path value="$PROJECT_DIR$/html/kj/node_modules/npm/test/packages/npm-test-files/package.json" />
+      <path value="$PROJECT_DIR$/html/kj/node_modules/npm/test/packages/npm-test-ignore-nested-nm/package.json" />
+      <path value="$PROJECT_DIR$/html/kj/node_modules/npm/test/packages/npm-test-ignore/package.json" />
+      <path value="$PROJECT_DIR$/html/kj/node_modules/npm/test/packages/npm-test-missing-bindir/package.json" />
+      <path value="$PROJECT_DIR$/html/kj/node_modules/npm/test/packages/npm-test-optional-deps/package.json" />
+      <path value="$PROJECT_DIR$/html/kj/node_modules/npm/test/packages/npm-test-peer-deps/package.json" />
+      <path value="$PROJECT_DIR$/html/kj/node_modules/npm/test/packages/npm-test-platform-all/package.json" />
+      <path value="$PROJECT_DIR$/html/kj/node_modules/npm/test/packages/npm-test-platform/package.json" />
+      <path value="$PROJECT_DIR$/html/kj/node_modules/npm/test/packages/npm-test-private/package.json" />
+      <path value="$PROJECT_DIR$/html/kj/node_modules/npm/test/packages/npm-test-shrinkwrap/package.json" />
+      <path value="$PROJECT_DIR$/html/kj/node_modules/npm/test/packages/npm-test-test-package/package.json" />
+      <path value="$PROJECT_DIR$/html/kj/node_modules/npm/test/packages/npm-test-url-dep/package.json" />
+      <path value="$PROJECT_DIR$/html/kj/node_modules/npm/test/tap/false_name/package.json" />
+      <path value="$PROJECT_DIR$/html/kj/node_modules/npm/test/tap/ignore-shrinkwrap/package.json" />
+      <path value="$PROJECT_DIR$/html/kj/node_modules/npm/test/tap/package-with-peer-dep/package.json" />
+      <path value="$PROJECT_DIR$/html/kj/node_modules/npm/test/tap/peer-deps-invalid/package.json" />
+      <path value="$PROJECT_DIR$/html/kj/node_modules22/npm/node_modules/abbrev/package.json" />
+      <path value="$PROJECT_DIR$/html/kj/node_modules22/npm/node_modules/ansi/package.json" />
+      <path value="$PROJECT_DIR$/html/kj/node_modules22/npm/node_modules/archy/package.json" />
+      <path value="$PROJECT_DIR$/html/kj/node_modules22/npm/node_modules/block-stream/package.json" />
+      <path value="$PROJECT_DIR$/html/kj/node_modules22/npm/node_modules/child-process-close/package.json" />
+      <path value="$PROJECT_DIR$/html/kj/node_modules22/npm/node_modules/chmodr/package.json" />
+      <path value="$PROJECT_DIR$/html/kj/node_modules22/npm/node_modules/chownr/package.json" />
+      <path value="$PROJECT_DIR$/html/kj/node_modules22/npm/node_modules/cmd-shim/package.json" />
+      <path value="$PROJECT_DIR$/html/kj/node_modules22/npm/node_modules/editor/package.json" />
+      <path value="$PROJECT_DIR$/html/kj/node_modules22/npm/node_modules/fstream-npm/node_modules/fstream-ignore/package.json" />
+      <path value="$PROJECT_DIR$/html/kj/node_modules22/npm/node_modules/fstream-npm/package.json" />
+      <path value="$PROJECT_DIR$/html/kj/node_modules22/npm/node_modules/fstream/package.json" />
+      <path value="$PROJECT_DIR$/html/kj/node_modules22/npm/node_modules/glob/package.json" />
+      <path value="$PROJECT_DIR$/html/kj/node_modules22/npm/node_modules/graceful-fs/package.json" />
+      <path value="$PROJECT_DIR$/html/kj/node_modules22/npm/node_modules/inherits/package.json" />
+      <path value="$PROJECT_DIR$/html/kj/node_modules22/npm/node_modules/ini/package.json" />
+      <path value="$PROJECT_DIR$/html/kj/node_modules22/npm/node_modules/init-package-json/node_modules/promzard/example/npm-init/package.json" />
+      <path value="$PROJECT_DIR$/html/kj/node_modules22/npm/node_modules/init-package-json/node_modules/promzard/package.json" />
+      <path value="$PROJECT_DIR$/html/kj/node_modules22/npm/node_modules/init-package-json/package.json" />
+      <path value="$PROJECT_DIR$/html/kj/node_modules22/npm/node_modules/lockfile/package.json" />
+      <path value="$PROJECT_DIR$/html/kj/node_modules22/npm/node_modules/lru-cache/package.json" />
+      <path value="$PROJECT_DIR$/html/kj/node_modules22/npm/node_modules/minimatch/node_modules/sigmund/package.json" />
+      <path value="$PROJECT_DIR$/html/kj/node_modules22/npm/node_modules/minimatch/package.json" />
+      <path value="$PROJECT_DIR$/html/kj/node_modules22/npm/node_modules/mkdirp/package.json" />
+      <path value="$PROJECT_DIR$/html/kj/node_modules22/npm/node_modules/node-gyp/package.json" />
+      <path value="$PROJECT_DIR$/html/kj/node_modules22/npm/node_modules/nopt/package.json" />
+      <path value="$PROJECT_DIR$/html/kj/node_modules22/npm/node_modules/npm-registry-client/node_modules/couch-login/package.json" />
+      <path value="$PROJECT_DIR$/html/kj/node_modules22/npm/node_modules/npm-registry-client/package.json" />
+      <path value="$PROJECT_DIR$/html/kj/node_modules22/npm/node_modules/npm-user-validate/package.json" />
+      <path value="$PROJECT_DIR$/html/kj/node_modules22/npm/node_modules/npmconf/node_modules/config-chain/node_modules/proto-list/package.json" />
+      <path value="$PROJECT_DIR$/html/kj/node_modules22/npm/node_modules/npmconf/node_modules/config-chain/package.json" />
+      <path value="$PROJECT_DIR$/html/kj/node_modules22/npm/node_modules/npmconf/package.json" />
+      <path value="$PROJECT_DIR$/html/kj/node_modules22/npm/node_modules/npmlog/package.json" />
+      <path value="$PROJECT_DIR$/html/kj/node_modules22/npm/node_modules/once/package.json" />
+      <path value="$PROJECT_DIR$/html/kj/node_modules22/npm/node_modules/opener/package.json" />
+      <path value="$PROJECT_DIR$/html/kj/node_modules22/npm/node_modules/osenv/package.json" />
+      <path value="$PROJECT_DIR$/html/kj/node_modules22/npm/node_modules/read-installed/package.json" />
+      <path value="$PROJECT_DIR$/html/kj/node_modules22/npm/node_modules/read-package-json/node_modules/normalize-package-data/node_modules/github-url-from-git/package.json" />
+      <path value="$PROJECT_DIR$/html/kj/node_modules22/npm/node_modules/read-package-json/node_modules/normalize-package-data/package.json" />
+      <path value="$PROJECT_DIR$/html/kj/node_modules22/npm/node_modules/read-package-json/package.json" />
+      <path value="$PROJECT_DIR$/html/kj/node_modules22/npm/node_modules/read/node_modules/mute-stream/package.json" />
+      <path value="$PROJECT_DIR$/html/kj/node_modules22/npm/node_modules/read/package.json" />
+      <path value="$PROJECT_DIR$/html/kj/node_modules22/npm/node_modules/request/node_modules/aws-sign/package.json" />
+      <path value="$PROJECT_DIR$/html/kj/node_modules22/npm/node_modules/request/node_modules/cookie-jar/package.json" />
+      <path value="$PROJECT_DIR$/html/kj/node_modules22/npm/node_modules/request/node_modules/forever-agent/package.json" />
+      <path value="$PROJECT_DIR$/html/kj/node_modules22/npm/node_modules/request/node_modules/form-data/node_modules/async/package.json" />
+      <path value="$PROJECT_DIR$/html/kj/node_modules22/npm/node_modules/request/node_modules/form-data/node_modules/combined-stream/node_modules/delayed-stream/package.json" />
+      <path value="$PROJECT_DIR$/html/kj/node_modules22/npm/node_modules/request/node_modules/form-data/node_modules/combined-stream/package.json" />
+      <path value="$PROJECT_DIR$/html/kj/node_modules22/npm/node_modules/request/node_modules/form-data/package.json" />
+      <path value="$PROJECT_DIR$/html/kj/node_modules22/npm/node_modules/request/node_modules/hawk/node_modules/boom/node_modules/hoek/package.json" />
+      <path value="$PROJECT_DIR$/html/kj/node_modules22/npm/node_modules/request/node_modules/hawk/node_modules/boom/package.json" />
+      <path value="$PROJECT_DIR$/html/kj/node_modules22/npm/node_modules/request/node_modules/hawk/node_modules/cryptiles/package.json" />
+      <path value="$PROJECT_DIR$/html/kj/node_modules22/npm/node_modules/request/node_modules/hawk/node_modules/hoek/package.json" />
+      <path value="$PROJECT_DIR$/html/kj/node_modules22/npm/node_modules/request/node_modules/hawk/node_modules/sntp/node_modules/hoek/package.json" />
+      <path value="$PROJECT_DIR$/html/kj/node_modules22/npm/node_modules/request/node_modules/hawk/node_modules/sntp/package.json" />
+      <path value="$PROJECT_DIR$/html/kj/node_modules22/npm/node_modules/request/node_modules/hawk/package.json" />
+      <path value="$PROJECT_DIR$/html/kj/node_modules22/npm/node_modules/request/node_modules/http-signature/node_modules/asn1/package.json" />
+      <path value="$PROJECT_DIR$/html/kj/node_modules22/npm/node_modules/request/node_modules/http-signature/node_modules/assert-plus/package.json" />
+      <path value="$PROJECT_DIR$/html/kj/node_modules22/npm/node_modules/request/node_modules/http-signature/node_modules/ctype/package.json" />
+      <path value="$PROJECT_DIR$/html/kj/node_modules22/npm/node_modules/request/node_modules/http-signature/package.json" />
+      <path value="$PROJECT_DIR$/html/kj/node_modules22/npm/node_modules/request/node_modules/json-stringify-safe/package.json" />
+      <path value="$PROJECT_DIR$/html/kj/node_modules22/npm/node_modules/request/node_modules/mime/package.json" />
+      <path value="$PROJECT_DIR$/html/kj/node_modules22/npm/node_modules/request/node_modules/node-uuid/package.json" />
+      <path value="$PROJECT_DIR$/html/kj/node_modules22/npm/node_modules/request/node_modules/oauth-sign/package.json" />
+      <path value="$PROJECT_DIR$/html/kj/node_modules22/npm/node_modules/request/node_modules/qs/package.json" />
+      <path value="$PROJECT_DIR$/html/kj/node_modules22/npm/node_modules/request/node_modules/tunnel-agent/package.json" />
+      <path value="$PROJECT_DIR$/html/kj/node_modules22/npm/node_modules/request/package.json" />
+      <path value="$PROJECT_DIR$/html/kj/node_modules22/npm/node_modules/retry/package.json" />
+      <path value="$PROJECT_DIR$/html/kj/node_modules22/npm/node_modules/rimraf/package.json" />
+      <path value="$PROJECT_DIR$/html/kj/node_modules22/npm/node_modules/semver/package.json" />
+      <path value="$PROJECT_DIR$/html/kj/node_modules22/npm/node_modules/sha/package.json" />
+      <path value="$PROJECT_DIR$/html/kj/node_modules22/npm/node_modules/slide/package.json" />
+      <path value="$PROJECT_DIR$/html/kj/node_modules22/npm/node_modules/tar/package.json" />
+      <path value="$PROJECT_DIR$/html/kj/node_modules22/npm/node_modules/uid-number/package.json" />
+      <path value="$PROJECT_DIR$/html/kj/node_modules22/npm/node_modules/which/package.json" />
+      <path value="$PROJECT_DIR$/html/kj/node_modules22/npm/package.json" />
+      <path value="$PROJECT_DIR$/html/kj/node_modules22/npm/test/disabled/bundlerecurs/package.json" />
+      <path value="$PROJECT_DIR$/html/kj/node_modules22/npm/test/disabled/change-bin-1/package.json" />
+      <path value="$PROJECT_DIR$/html/kj/node_modules22/npm/test/disabled/change-bin-2/package.json" />
+      <path value="$PROJECT_DIR$/html/kj/node_modules22/npm/test/disabled/failer/package.json" />
+      <path value="$PROJECT_DIR$/html/kj/node_modules22/npm/test/disabled/fast/package.json" />
+      <path value="$PROJECT_DIR$/html/kj/node_modules22/npm/test/disabled/package-bar/package.json" />
+      <path value="$PROJECT_DIR$/html/kj/node_modules22/npm/test/disabled/package-config/package.json" />
+      <path value="$PROJECT_DIR$/html/kj/node_modules22/npm/test/disabled/package-foo/package.json" />
+      <path value="$PROJECT_DIR$/html/kj/node_modules22/npm/test/disabled/slow/package.json" />
+      <path value="$PROJECT_DIR$/html/kj/node_modules22/npm/test/disabled/startstop/package.json" />
+      <path value="$PROJECT_DIR$/html/kj/node_modules22/npm/test/packages/npm-test-array-bin/package.json" />
+      <path value="$PROJECT_DIR$/html/kj/node_modules22/npm/test/packages/npm-test-blerg/package.json" />
+      <path value="$PROJECT_DIR$/html/kj/node_modules22/npm/test/packages/npm-test-blerg3/package.json" />
+      <path value="$PROJECT_DIR$/html/kj/node_modules22/npm/test/packages/npm-test-bundled-git/package.json" />
+      <path value="$PROJECT_DIR$/html/kj/node_modules22/npm/test/packages/npm-test-dir-bin/package.json" />
+      <path value="$PROJECT_DIR$/html/kj/node_modules22/npm/test/packages/npm-test-env-reader/package.json" />
+      <path value="$PROJECT_DIR$/html/kj/node_modules22/npm/test/packages/npm-test-files/package.json" />
+      <path value="$PROJECT_DIR$/html/kj/node_modules22/npm/test/packages/npm-test-ignore-nested-nm/package.json" />
+      <path value="$PROJECT_DIR$/html/kj/node_modules22/npm/test/packages/npm-test-ignore/package.json" />
+      <path value="$PROJECT_DIR$/html/kj/node_modules22/npm/test/packages/npm-test-missing-bindir/package.json" />
+      <path value="$PROJECT_DIR$/html/kj/node_modules22/npm/test/packages/npm-test-optional-deps/package.json" />
+      <path value="$PROJECT_DIR$/html/kj/node_modules22/npm/test/packages/npm-test-peer-deps/package.json" />
+      <path value="$PROJECT_DIR$/html/kj/node_modules22/npm/test/packages/npm-test-platform-all/package.json" />
+      <path value="$PROJECT_DIR$/html/kj/node_modules22/npm/test/packages/npm-test-platform/package.json" />
+      <path value="$PROJECT_DIR$/html/kj/node_modules22/npm/test/packages/npm-test-private/package.json" />
+      <path value="$PROJECT_DIR$/html/kj/node_modules22/npm/test/packages/npm-test-shrinkwrap/package.json" />
+      <path value="$PROJECT_DIR$/html/kj/node_modules22/npm/test/packages/npm-test-test-package/package.json" />
+      <path value="$PROJECT_DIR$/html/kj/node_modules22/npm/test/packages/npm-test-url-dep/package.json" />
+      <path value="$PROJECT_DIR$/html/kj/node_modules22/npm/test/tap/false_name/package.json" />
+      <path value="$PROJECT_DIR$/html/kj/node_modules22/npm/test/tap/ignore-shrinkwrap/package.json" />
+      <path value="$PROJECT_DIR$/html/kj/node_modules22/npm/test/tap/package-with-peer-dep/package.json" />
+      <path value="$PROJECT_DIR$/html/kj/node_modules22/npm/test/tap/peer-deps-invalid/package.json" />
+      <path value="$PROJECT_DIR$/kjq/二分彩/node_modules/mysql/node_modules/hashish/node_modules/traverse/package.json" />
+      <path value="$PROJECT_DIR$/kjq/二分彩/node_modules/mysql/node_modules/hashish/package.json" />
+      <path value="$PROJECT_DIR$/kjq/二分彩/node_modules/mysql/package.json" />
+      <path value="$PROJECT_DIR$/kjq/二分彩/node_modules/mysqlv2/package.json" />
+      <path value="$PROJECT_DIR$/kjq/二分彩/node_modules/npm/node_modules/abbrev/package.json" />
+      <path value="$PROJECT_DIR$/kjq/二分彩/node_modules/npm/node_modules/ansi/package.json" />
+      <path value="$PROJECT_DIR$/kjq/二分彩/node_modules/npm/node_modules/archy/package.json" />
+      <path value="$PROJECT_DIR$/kjq/二分彩/node_modules/npm/node_modules/block-stream/package.json" />
+      <path value="$PROJECT_DIR$/kjq/二分彩/node_modules/npm/node_modules/child-process-close/package.json" />
+      <path value="$PROJECT_DIR$/kjq/二分彩/node_modules/npm/node_modules/chmodr/package.json" />
+      <path value="$PROJECT_DIR$/kjq/二分彩/node_modules/npm/node_modules/chownr/package.json" />
+      <path value="$PROJECT_DIR$/kjq/二分彩/node_modules/npm/node_modules/cmd-shim/package.json" />
+      <path value="$PROJECT_DIR$/kjq/二分彩/node_modules/npm/node_modules/editor/package.json" />
+      <path value="$PROJECT_DIR$/kjq/二分彩/node_modules/npm/node_modules/fstream-npm/node_modules/fstream-ignore/package.json" />
+      <path value="$PROJECT_DIR$/kjq/二分彩/node_modules/npm/node_modules/fstream-npm/package.json" />
+      <path value="$PROJECT_DIR$/kjq/二分彩/node_modules/npm/node_modules/fstream/package.json" />
+      <path value="$PROJECT_DIR$/kjq/二分彩/node_modules/npm/node_modules/glob/package.json" />
+      <path value="$PROJECT_DIR$/kjq/二分彩/node_modules/npm/node_modules/graceful-fs/package.json" />
+      <path value="$PROJECT_DIR$/kjq/二分彩/node_modules/npm/node_modules/inherits/package.json" />
+      <path value="$PROJECT_DIR$/kjq/二分彩/node_modules/npm/node_modules/ini/package.json" />
+      <path value="$PROJECT_DIR$/kjq/二分彩/node_modules/npm/node_modules/init-package-json/node_modules/promzard/example/npm-init/package.json" />
+      <path value="$PROJECT_DIR$/kjq/二分彩/node_modules/npm/node_modules/init-package-json/node_modules/promzard/package.json" />
+      <path value="$PROJECT_DIR$/kjq/二分彩/node_modules/npm/node_modules/init-package-json/package.json" />
+      <path value="$PROJECT_DIR$/kjq/二分彩/node_modules/npm/node_modules/lockfile/package.json" />
+      <path value="$PROJECT_DIR$/kjq/二分彩/node_modules/npm/node_modules/lru-cache/package.json" />
+      <path value="$PROJECT_DIR$/kjq/二分彩/node_modules/npm/node_modules/minimatch/node_modules/sigmund/package.json" />
+      <path value="$PROJECT_DIR$/kjq/二分彩/node_modules/npm/node_modules/minimatch/package.json" />
+      <path value="$PROJECT_DIR$/kjq/二分彩/node_modules/npm/node_modules/mkdirp/package.json" />
+      <path value="$PROJECT_DIR$/kjq/二分彩/node_modules/npm/node_modules/node-gyp/package.json" />
+      <path value="$PROJECT_DIR$/kjq/腾讯彩-tx-ssc/node_modules/mysql/node_modules/hashish/node_modules/traverse/package.json" />
+      <path value="$PROJECT_DIR$/kjq/腾讯彩-tx-ssc/node_modules/mysql/node_modules/hashish/package.json" />
+      <path value="$PROJECT_DIR$/kjq/腾讯彩-tx-ssc/node_modules/mysql/package.json" />
+      <path value="$PROJECT_DIR$/kjq/腾讯彩-tx-ssc/node_modules/mysqlv2/package.json" />
+      <path value="$PROJECT_DIR$/kjq/腾讯彩-tx-ssc/node_modules/npm/node_modules/abbrev/package.json" />
+      <path value="$PROJECT_DIR$/kjq/腾讯彩-tx-ssc/node_modules/npm/node_modules/ansi/package.json" />
+      <path value="$PROJECT_DIR$/kjq/腾讯彩-tx-ssc/node_modules/npm/node_modules/archy/package.json" />
+      <path value="$PROJECT_DIR$/kjq/腾讯彩-tx-ssc/node_modules/npm/node_modules/block-stream/package.json" />
+      <path value="$PROJECT_DIR$/kjq/腾讯彩-tx-ssc/node_modules/npm/node_modules/child-process-close/package.json" />
+      <path value="$PROJECT_DIR$/kjq/腾讯彩-tx-ssc/node_modules/npm/node_modules/chmodr/package.json" />
+      <path value="$PROJECT_DIR$/kjq/腾讯彩-tx-ssc/node_modules/npm/node_modules/chownr/package.json" />
+      <path value="$PROJECT_DIR$/kjq/腾讯彩-tx-ssc/node_modules/npm/node_modules/cmd-shim/package.json" />
+      <path value="$PROJECT_DIR$/kjq/腾讯彩-tx-ssc/node_modules/npm/node_modules/editor/package.json" />
+      <path value="$PROJECT_DIR$/kjq/腾讯彩-tx-ssc/node_modules/npm/node_modules/fstream-npm/node_modules/fstream-ignore/package.json" />
+      <path value="$PROJECT_DIR$/kjq/腾讯彩-tx-ssc/node_modules/npm/node_modules/fstream-npm/package.json" />
+      <path value="$PROJECT_DIR$/kjq/腾讯彩-tx-ssc/node_modules/npm/node_modules/fstream/package.json" />
+      <path value="$PROJECT_DIR$/kjq/腾讯彩-tx-ssc/node_modules/npm/node_modules/glob/package.json" />
+      <path value="$PROJECT_DIR$/kjq/腾讯彩-tx-ssc/node_modules/npm/node_modules/graceful-fs/package.json" />
+      <path value="$PROJECT_DIR$/kjq/腾讯彩-tx-ssc/node_modules/npm/node_modules/inherits/package.json" />
+      <path value="$PROJECT_DIR$/kjq/腾讯彩-tx-ssc/node_modules/npm/node_modules/ini/package.json" />
+      <path value="$PROJECT_DIR$/kjq/腾讯彩-tx-ssc/node_modules/npm/node_modules/init-package-json/node_modules/promzard/example/npm-init/package.json" />
+      <path value="$PROJECT_DIR$/kjq/腾讯彩-tx-ssc/node_modules/npm/node_modules/init-package-json/node_modules/promzard/package.json" />
+      <path value="$PROJECT_DIR$/kjq/腾讯彩-tx-ssc/node_modules/npm/node_modules/init-package-json/package.json" />
+      <path value="$PROJECT_DIR$/kjq/腾讯彩-tx-ssc/node_modules/npm/node_modules/lockfile/package.json" />
+      <path value="$PROJECT_DIR$/kjq/腾讯彩-tx-ssc/node_modules/npm/node_modules/lru-cache/package.json" />
+      <path value="$PROJECT_DIR$/kjq/腾讯彩-tx-ssc/node_modules/npm/node_modules/minimatch/node_modules/sigmund/package.json" />
+      <path value="$PROJECT_DIR$/kjq/腾讯彩-tx-ssc/node_modules/npm/node_modules/minimatch/package.json" />
+      <path value="$PROJECT_DIR$/kjq/腾讯彩-tx-ssc/node_modules/npm/node_modules/mkdirp/package.json" />
+      <path value="$PROJECT_DIR$/kjq/腾讯彩-tx-ssc/node_modules/npm/node_modules/node-gyp/package.json" />
+      <path value="$PROJECT_DIR$/kjq/银河龙凤/node_modules/mysql/node_modules/hashish/node_modules/traverse/package.json" />
+      <path value="$PROJECT_DIR$/kjq/银河龙凤/node_modules/mysql/node_modules/hashish/package.json" />
+      <path value="$PROJECT_DIR$/kjq/银河龙凤/node_modules/mysql/package.json" />
+      <path value="$PROJECT_DIR$/kjq/银河龙凤/node_modules/mysqlv2/package.json" />
+      <path value="$PROJECT_DIR$/kjq/银河龙凤/node_modules/npm/node_modules/abbrev/package.json" />
+      <path value="$PROJECT_DIR$/kjq/银河龙凤/node_modules/npm/node_modules/ansi/package.json" />
+      <path value="$PROJECT_DIR$/kjq/银河龙凤/node_modules/npm/node_modules/archy/package.json" />
+      <path value="$PROJECT_DIR$/kjq/银河龙凤/node_modules/npm/node_modules/block-stream/package.json" />
+      <path value="$PROJECT_DIR$/kjq/银河龙凤/node_modules/npm/node_modules/child-process-close/package.json" />
+      <path value="$PROJECT_DIR$/kjq/银河龙凤/node_modules/npm/node_modules/chmodr/package.json" />
+      <path value="$PROJECT_DIR$/kjq/银河龙凤/node_modules/npm/node_modules/chownr/package.json" />
+      <path value="$PROJECT_DIR$/kjq/银河龙凤/node_modules/npm/node_modules/cmd-shim/package.json" />
+      <path value="$PROJECT_DIR$/kjq/银河龙凤/node_modules/npm/node_modules/editor/package.json" />
+      <path value="$PROJECT_DIR$/kjq/银河龙凤/node_modules/npm/node_modules/fstream-npm/node_modules/fstream-ignore/package.json" />
+      <path value="$PROJECT_DIR$/kjq/银河龙凤/node_modules/npm/node_modules/fstream-npm/package.json" />
+      <path value="$PROJECT_DIR$/kjq/银河龙凤/node_modules/npm/node_modules/fstream/package.json" />
+      <path value="$PROJECT_DIR$/kjq/银河龙凤/node_modules/npm/node_modules/glob/package.json" />
+      <path value="$PROJECT_DIR$/kjq/银河龙凤/node_modules/npm/node_modules/graceful-fs/package.json" />
+      <path value="$PROJECT_DIR$/kjq/银河龙凤/node_modules/npm/node_modules/inherits/package.json" />
+      <path value="$PROJECT_DIR$/kjq/银河龙凤/node_modules/npm/node_modules/ini/package.json" />
+      <path value="$PROJECT_DIR$/kjq/银河龙凤/node_modules/npm/node_modules/init-package-json/node_modules/promzard/example/npm-init/package.json" />
+      <path value="$PROJECT_DIR$/kjq/银河龙凤/node_modules/npm/node_modules/init-package-json/node_modules/promzard/package.json" />
+      <path value="$PROJECT_DIR$/kjq/银河龙凤/node_modules/npm/node_modules/init-package-json/package.json" />
+      <path value="$PROJECT_DIR$/kjq/银河龙凤/node_modules/npm/node_modules/lockfile/package.json" />
+      <path value="$PROJECT_DIR$/kjq/银河龙凤/node_modules/npm/node_modules/lru-cache/package.json" />
+      <path value="$PROJECT_DIR$/kjq/银河龙凤/node_modules/npm/node_modules/minimatch/node_modules/sigmund/package.json" />
+      <path value="$PROJECT_DIR$/kjq/银河龙凤/node_modules/npm/node_modules/minimatch/package.json" />
+      <path value="$PROJECT_DIR$/kjq/银河龙凤/node_modules/npm/node_modules/mkdirp/package.json" />
+      <path value="$PROJECT_DIR$/kjq/银河龙凤/node_modules/npm/node_modules/node-gyp/package.json" />
+    </packageJsonPaths>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="61" />
+    <option name="y" value="22" />
+    <option name="width" value="1539" />
+    <option name="height" value="878" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="lafei" type="b2602c69:ProjectViewProjectNode" />
+              <item name="lafei" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="lafei" type="b2602c69:ProjectViewProjectNode" />
+              <item name="lafei" type="462c0819:PsiDirectoryNode" />
+              <item name="Application" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="lafei" type="b2602c69:ProjectViewProjectNode" />
+              <item name="lafei" type="462c0819:PsiDirectoryNode" />
+              <item name="Application" type="462c0819:PsiDirectoryNode" />
+              <item name="User" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <module />
+      <method />
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="true" type="Remote" factoryName="Remote">
+      <option name="USE_SOCKET_TRANSPORT" value="true" />
+      <option name="SERVER_MODE" value="false" />
+      <option name="SHMEM_ADDRESS" value="javadebug" />
+      <option name="HOST" value="localhost" />
+      <option name="PORT" value="5005" />
+      <method />
+    </configuration>
+    <configuration default="true" type="TestNG" factoryName="TestNG">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="ANNOTATION_TYPE" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <envs />
+      <properties />
+      <listeners />
+      <method />
+    </configuration>
+    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
+      <module name="" />
+      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
+      <option name="PROGRAM_PARAMETERS" />
+      <predefined_log_file id="idea.log" enabled="true" />
+      <method />
+    </configuration>
+  </component>
+  <component name="SvnConfiguration" cleanupOnStartRun="true">
+    <configuration>$USER_HOME$/.subversion</configuration>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="b6060525-a7a0-4bb1-9dfa-57eb4e2ad756" name="Default" comment="" />
+      <created>1528685793988</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1528685793988</updated>
+      <workItem from="1528685796218" duration="3404000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="3404000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="61" y="22" width="1539" height="878" extended-state="0" />
+    <layout>
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Version Control" />
+      <window_info anchor="bottom" id="Terminal" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24949966" />
+      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
+      <window_info anchor="right" id="Database" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info id="Favorites" side_tool="true" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/Application/Home/Controller/IndexController.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-955">
+          <caret line="53" column="10" lean-forward="true" selection-start-line="53" selection-start-column="10" selection-end-line="53" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/User/Conf/config.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/User/Common/common.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Home/Conf/config.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="504">
+          <caret line="30" column="11" lean-forward="true" selection-start-line="30" selection-start-column="11" selection-end-line="30" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web.config">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/index.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/Runtime/Logs/1521521614-18_03_20.log">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="20097" column="30" selection-start-line="20097" selection-start-column="30" selection-end-line="20097" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/Common/Conf/config.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-194" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Common/Conf/config.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="43" column="47" selection-start-line="43" selection-start-column="47" selection-end-line="43" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>

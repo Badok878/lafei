@@ -1,0 +1,25 @@
+<extend name="Base/common" />
+<block name="title">
+    <title>网站公告－{:S('WEB_NAME')}</title>
+</block>
+<block name="body">
+    <div id='page-content'>
+        <div class="panel">
+            <div class="panel-heading">
+                <h3 class="panel-title"><span class="glyphicon glyphicon-question-sign" style="color:  #ec3e08;padding:10px;" aria-hidden="true"></span>{$settings[29]['title']} </h3>
+            </div>
+            <div class="panel-body">
+                <div class="mminfo">
+                    <div class="mminfohead">
+                        <span><i class="fa fa-exclamation"></i>
+                              {$settings[29]['title']}
+                                </span>
+                    </div>
+                    <div class="mminfobox">
+                        {$settings[29]['value']}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</block>

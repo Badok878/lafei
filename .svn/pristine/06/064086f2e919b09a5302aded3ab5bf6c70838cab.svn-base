@@ -1,0 +1,106 @@
+<?php if (!defined('THINK_PATH')) exit();?><script src="/Public/Home/js/jquery.min.js"></script>
+<script src="/Public/Home/js/bootstrap.min.js"></script>
+<script src="/Public/Home/js/jquery.nouislider.all.min.js"></script>
+<script src="/Public/Home/js/bootstrap-datetimepicker.min.js"></script>
+<script src="/Public/Home/js/bootstrap-datetimepicker.zh-CN.min.js"></script>
+<script src="/Public/Home/js/dataTables.min.js"></script>
+<script src="/Public/Home/js/dataTables.bootstrap.min.js"></script>
+<script src="/Public/Home/js/dataTables.responsive.min.js"></script>
+<script src="/Public/Home/js/bootbox.min.js"></script>
+<script src="/Public/Home/js/bootstrap-slider.min.js"></script>
+<script src="/Public/Home/js/layer/layui/layui.js"></script>
+<link rel="stylesheet" href="/Public/Home/js/layer/layui/css/layui.css">
+<script type="text/javascript">
+    $(document).ready(function () {
+        $("body").click(
+                function toggle() {
+                    $("div#demo-set", window.top.document).removeClass("open");
+                    $(".mega-dropdown", window.top.document).removeClass("open");
+                    $(".dropdown", window.top.document).removeClass("open");
+                    $(".lskj").fadeOut(200);
+                }
+        );
+    });
+    $('.form_datetime').datetimepicker({
+        autoclose: 1,
+        todayBtn: 0,
+        minView: 2,
+        language: 'zh-CN',
+        format: 'yyyy-mm-dd'
+    });
+    $('.form_datetime').focus(function () {
+        this.blur();
+    });
+</script>
+<?php
+$stateName = array('已到账', '正在办理', '已取消', '已支付', '失败'); ?>
+    <div>
+        <table width="100%" class="table table-striped" id="my-datatable" cellspacing="0">
+            <thead>
+                <tr class="table_b_th">
+                    <th>用户账号</td>
+                        <th>提现金额</td>
+                            <th>申请时间</td>
+                                <th>提现银行</td>
+                                    <th>银行尾号</td>
+                                        <th>状态</td>
+                                            <th>备注</th>
+                </tr>
+            </thead>
+            <tbody class="table_b_tr">
+                <?php if ($data) { foreach ($data as $var) { ?>
+                <tr>
+                    <td>
+                        <?=$var['username']?>
+                    </td>
+                    <td>
+                        <?=$var['amount']?>
+                    </td>
+                    <td>
+                        <?=date('m-d H:i:s', $var['actionTime'])?>
+                    </td>
+                    <td>
+                        <?=$bankData[$var['bankId']]['name']?>
+                    </td>
+                    <td>
+                        <?='***' . preg_replace('/^.*(.{4})$/', '\1', $var['account'])?>
+                    </td>
+                    <td>
+                    <?php
+ if($var['state'] == 1){ echo count($cashcount)-1 . '人在等待处理！'; }elseif($var['state'] ==2){ echo '已取消！'; }elseif($var['state'] ==3){ echo '已支付！'; }elseif($var['state'] ==4){ echo '提现失败！'; }elseif($var['state'] ==5){ echo '后台删除！'; }elseif($var['state'] ==0){ echo '确认到账！'; } ?>
+
+                    </td>
+                    <td>
+                        <?=$var['info']?>
+                    </td>
+                </tr>
+                <?php }?>
+                <?php } else {?>
+                <tr>
+                    <td colspan="12" width="910px">当前没有查询到任何数据。</td>
+                </tr>
+                <?php }?>
+            </tbody>
+        </table>
+    </div>
+    <div class="page">
+        <?php echo ($_page); ?>
+    </div>
+<script src="/Public/Home/js/jquery.min.js"></script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('.showDetails').bind('click', showBet);
+        //解决分页问题
+        $('.page a').bind('click', function(){
+            if(this.tagName == 'A'){
+                var parent = this.parentNode.parentNode;
+                var value = $(parent).attr('target');
+                if(value=='_blank')
+                    return true;
+                var url = $(this).attr('href');
+                $('#record-span').load(url);
+                return false;
+            }
+        });
+    });
+</script>

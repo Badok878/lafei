@@ -1,0 +1,35 @@
+[TYPE]: MYSQL
+[SQL]: REPLACE INTO `nitalk_session` (`uid`,`sessid`,`active`) VALUES (286,'t9sucn9pp7fr75fnj5258fe4c4',1487435563)
+[TIME]: 2017-02-19 00:32:43
+[URI]: /nitalk/gate
+
+[TYPE]: MYSQL
+[SQL]: REPLACE INTO `nitalk_session` (`uid`,`sessid`,`active`) VALUES (286,'t9sucn9pp7fr75fnj5258fe4c4',1487463137)
+[TIME]: 2017-02-19 08:12:17
+[URI]: /nitalk/gate
+
+[TYPE]: MYSQL
+[SQL]: REPLACE INTO `nitalk_session` (`uid`,`sessid`,`active`) VALUES (286,'t9sucn9pp7fr75fnj5258fe4c4',1487463190)
+[TIME]: 2017-02-19 08:13:10
+[URI]: /nitalk/gate
+
+[TYPE]: MYSQL
+[SQL]: REPLACE INTO `nitalk_session` (`uid`,`sessid`,`active`) VALUES (286,'t9sucn9pp7fr75fnj5258fe4c4',1487504921)
+[TIME]: 2017-02-19 19:48:41
+[URI]: /nitalk/gate
+
+[TYPE]: MYSQL
+[SQL]: REPLACE INTO `nitalk_session` (`uid`,`sessid`,`active`) VALUES (286,'5f8kpi8hp8k376js14pr2iupl5',1487519264)
+[TIME]: 2017-02-19 23:47:44
+[URI]: /nitalk/gate
+
+[TYPE]: MYSQL
+[SQL]: REPLACE INTO `nitalk_session` (`uid`,`sessid`,`active`) VALUES (286,'5f8kpi8hp8k376js14pr2iupl5',1487519375)
+[TIME]: 2017-02-19 23:49:35
+[URI]: /nitalk/gate
+
+[TYPE]: MYSQL
+[SQL]: REPLACE INTO `nitalk_session` (`uid`,`sessid`,`active`) VALUES (286,'5f8kpi8hp8k376js14pr2iupl5',1487519567)
+[TIME]: 2017-02-19 23:52:47
+[URI]: /nitalk/gate
+

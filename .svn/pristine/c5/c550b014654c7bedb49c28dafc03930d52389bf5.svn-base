@@ -1,0 +1,51 @@
+<extend name="Base/common" />
+
+<block name="title">
+    <title>在线充值－{:S('WEB_NAME')}</title>
+</block>
+<block name="style">
+    <link href="__CSS__/chongzhi.css" rel="stylesheet">
+
+</block>
+
+<block name="body">
+
+    <div class="effect mainnav-lg mainnav-fixed navbar-fixed footer-fixed" id="container">
+        <div id="page-content">
+            <form id="recharge" method='POST' action="{:U('recharge/zhongyunPost')}" role="form">
+                <div class="panel">
+                    <div class="panel-heading">
+                        <h3 class="panel-title"><img alt="" src="__IMG__/main/cz.png">中云支付</h3>
+                    </div>
+                    <div class="panel-body chongzhibox">
+
+
+                        <div class="czfoot">
+                            <div class="czfootbox">
+                                <button class="btn btn-primary" autocomplete="off" type="submit" onclick="return fukuan(this);">
+                                    继续下一步
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <input type="hidden" name="amount" value="{$amount}" />
+
+                <input size="50" type="hidden" name="merchParam" id="merchParam" value="{$user.uid}" />
+                <input size="50" type="hidden" name="tradeSummary" id="tradeSummary" value="{$user.username}" />
+            </form>
+        </div>
+    </div>
+</block>
+<script src="__JS__/bootbox.min.js"></script>
+
+<script type="text/javascript">
+    function fukuan(me) {
+        $(me).attr('disabled', true);
+        $(me).text('正在转接。。');
+    }
+    $('.yh li a').click(function() {
+        $(this.parent()).addClass('selected').sibling().removeClass('selected');
+    })
+</script>
+</block>

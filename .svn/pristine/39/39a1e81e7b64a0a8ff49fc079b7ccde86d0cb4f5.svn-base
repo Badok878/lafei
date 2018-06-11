@@ -1,0 +1,159 @@
+<div>
+
+<table width="100%" class="table table-striped" id="my-datatable" cellspacing="0">
+
+	<thead>
+		<tr class="table_b_th">
+			<th>用户名</td>
+            <th>用户类型</td>
+            <th>返点</td>
+			<th>余额</td>
+			<th>注册时间</td>
+			<th>状态</td>
+			<th>操作</td>
+		</tr>
+	</thead>
+	<tbody class="table_b_tr">
+	<?php if($data){
+
+	foreach($data as $var){ ?>
+			<td><?=$var['username']?></td>
+            <td><?=$this->iff($var['type'],'代理','会员')?></td>
+            <td><?=$var['fanDian']?>%</td>
+			<td><?=$var['coin']?></td>
+			<td><?=date('Y-m-d H:i',$var['regTime'])?></td>
+			<td><?=$this->iff($var['enable'],'正常','冻结')?></td>
+			<td>
+			<?php
+			$p_arr = explode(',',$var['parents']);
+			if($user['uid']!=$var['uid'] && in_array($user['uid'],$p_arr)){
+			?>
+			<a class="text-primary chongzhiMember" href="#" userid="<?=$var['uid']?>" yue="{$var.coin}" username="{$var.username}" target="modal">充值</a>&nbsp;&nbsp;
+			<?php }?>
+				<a class="text-primary team-balance" href="#" team_balance="{$var.team_balance}" username="{$var.username}" target="modal">团队余额</a>&nbsp;&nbsp;
+			<?php if($user['uid']!=$var['uid'] && $var['parentId']==$user['uid']){ ?>
+			<a class="text-primary updateMember" href="#" target="modal" usertype="{$var.type}" title="{$var.username}" min="{$var.nextMaxFandian}" max="{$user.fanDian}">设置返点</a>&nbsp;&nbsp;
+			<?php } ?>
+            <a class="text-primary" href="<?=U('team/record?username='.$var['username'])?>" >投注记录</a>&nbsp;&nbsp;
+			<?php if($var['type']==1&&$utype!=3) { ?>
+			<a target="ajax" class="text-primary" href="<?=U('team/searchMember?utype=2&uid='.$var['uid']) ?>">查看下级</a>
+			<?php } ?>
+			<!--	<?php if($var['type']==1&&$utype!=3&&utype!=2) { ?>
+				<a target="ajax" class="text-primary" href="<?=U('team/searchMember?utype=4&uid='.$var['uid']) ?>">查看上级</a>
+				<?php } ?>-->
+			</td>
+            
+		</tr>
+	<?php } }else{ ?>
+    <tr><td colspan="12" width="910px">当前没有查询到任何数据。</td></tr>
+    <?php } ?>
+	</tbody>
+
+</table>
+</div>
+<div class="page">
+    {$_page}
+
+</div>
+
+<div class="modal fade" id="teamBalance" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+				<h4 class="modal-title" id="myModalLabel">团队余额</h4>
+			</div>
+			<ul class="formul">
+				<li><span class="text-danger" id="errorInfo"></span></li>
+				<li>
+					<span style="width:25%; font-size: 16px; text-align: right; display:inline-block;">用户昵称：</span>
+					<span id="user_name" style="width:74%; font-size: 16px; text-align: left; display:inline-block; margin-bottom: 20px"></span>
+				</li>
+				<li>
+					<span style="width:25%; font-size: 16px; text-align: right; display:inline-block;">团队余额：</span>
+					<span id="team_balance" style="width:74%; font-size: 16px; text-align: left; display:inline-block;"></span>
+				</li>
+			</ul>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+			</div>
+		</div><!-- /.modal-content -->
+	</div><!-- /.modal -->
+</div>
+<script src="__JS__/jquery.min.js"></script>
+<script src="__JS__/bootstrap.min.js"></script>
+<script src="__JS__/jquery.nouislider.all.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function () {
+	$('a[target=ajax]').bind('click', function(){
+		var url = $(this).attr('href');
+		$('#record-span').load(url);
+		return false;
+	});
+	
+	$('.updateMember').bind('click', function () {
+		$('#MemberQuota').val(0);
+		$('#OperatType').val(2);
+		$('#operatTitle').text('设置返点');
+		$('#username').val($(this).attr('title'));
+		$("#username").attr("readonly", true);
+        $('.radio').css('display', 'none');
+        $('#userNameModal').css('display', 'none');
+
+		$('#li-password').css('display', 'none');
+		var usertype = $(this).attr('usertype');
+		if (usertype == '1') {
+			$('#MemberType').val(1);
+			$('#radioAgent').click();
+		} else {
+			$('#MemberType').val(0);
+			$('#radioMember').click();
+		}
+		$('#btnSubmit').attr('action' , "{:U('team/userUpdateed')}");
+		$('#add-modal').modal('show');			
+		loadbouns($(this).attr('min'),$(this).attr('max'),'range-def-val');
+		return false;
+	});
+    
+	$('.chongzhiMember').bind('click', function () {
+		$('#chongzhiTitle').text('为会员充值');
+		$('#chongzhiSubmit').attr('action' , "{:U('team/chongzhiMember')}");
+        $("#chongzhi_meyue").html(<?=$user['coin']?>);
+        $("#chongzhi_shouusername_txt").html("充值用户账号：");
+        $("#chongzhi_shouusername").val($(this).attr('username'));
+        $("#chongzhi_shouusername").attr("readonly", true);
+        $('#chongzhi_shouyueli').show();
+        $("#chongzhi_shouyue").val($(this).attr('yue'));
+        $("#money_txt").html("充值金额：");
+        $('#money').val("");
+        $("#userid").val($(this).attr('userid'));
+        $('#zjmm').val("");
+		$('#chongzhi-modal').modal('show');
+		return false;
+	});
+
+    $('.team-balance').bind('click', function () {
+		var  user_name = $(this).attr('username');
+        $("#user_name").html(user_name);
+
+        var  team_balance = $(this).attr('team_balance');
+        $("#team_balance").html(team_balance);
+
+        $('#teamBalance').modal('show');
+        return false;
+    });
+	
+	//解决分页问题
+	$('.page a').bind('click', function(){
+		if(this.tagName == 'A'){
+			var parent = this.parentNode.parentNode;
+			var value = $(parent).attr('target');
+			if(value=='_blank')	
+				return true;
+			var url = $(this).attr('href');
+			$('#record-span').load(url);
+			return false;
+		}
+	});
+});
+</script>

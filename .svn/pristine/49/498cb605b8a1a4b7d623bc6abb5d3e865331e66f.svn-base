@@ -1,0 +1,257 @@
+<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="description" content="1元夺宝，就是指只需1元就有机会获得一件商品，是基于网易邮箱平台孵化的新项目，好玩有趣，不容错过。">
+<meta name="keywords" content="1元,一元,1元夺宝,1元购,1元购物,1元云购,一元夺宝,一元购,一元购物,一元云购,夺宝奇兵">
+<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, width=device-width">
+<title>消费报表－<?php echo S('WEB_NAME');?></title>
+<link type="text/css" rel="stylesheet" href="/Public/Mobile/css/jquery-ui-1.8.21.custom.css" />
+<link rel="stylesheet" type="text/css" href="/Public/Mobile/css/common.css">
+
+
+
+<script type="text/javascript" src="/Public/Mobile/js/jquery-1.8.0.min.js"></script>
+<script type="text/javascript" src="/Public/Mobile/js/comm.js?v=wj5.0"></script>
+<script type="text/javascript" src="/Public/Mobile/js/jquery-ui-1.8.23.custom.min.js"></script>
+<script type="text/javascript" src="/Public/Mobile/js/jquery.simplemodal.src.js"></script>
+
+<!-- IE浏览器时需要以下js支持 -->
+
+<!-- 页面header钩子，一般用于加载插件CSS文件和代码 -->
+<?php echo hook('pageHeader');?>
+
+	
+<link rel="stylesheet" type="text/css" href="/Public/Mobile/css/user.css">
+<link href="/Public/Mobile/css/bootstrap.min.css" rel="stylesheet">
+<link href="/Public/Mobile/css/bootstrap-datetimepicker.min.css" rel="stylesheet">
+
+	
+<script type="text/javascript">
+var lid=0;
+$(function(){
+	$('.queryMask').on('click', function () {
+		$('#queryMask').css('display', 'block');
+	});
+	
+	$('a[target=ajax]').live('click', function(){
+		wait();
+		var url = $(this).attr('href');
+		$('#record-span').load(url,function(){
+			destroyWait();
+		});
+		return false;
+	});
+});
+</script>
+
+</head>
+<body style="background: #5e6171!important;">
+	<!-- 头部 -->
+	
+
+	<!-- /头部 -->
+	
+	<!-- 主体 -->
+	
+<div class="m-user">
+	<div class="m-simpleHeader" id="dvHeader">
+		<a href="javascript:history.back(-1);" data-pro="back" data-back="true" class="m-simpleHeader-back"><i class="ico ico-back"></i></a>
+		<a href="#" data-pro="ok" class="m-simpleHeader-ok queryMask" id="aHome"><i class="ico ico-search"></i></a>
+		<h1 style="height: 38px;line-height: 38px;margin-top:0px;">消费报表</h1>
+	</div>
+	<div class="mask" id="queryMask" style="bottom: 0px; display: none;">
+		<div class="maskbox">
+			<div class="win">
+				<div class="winhead">
+					查    询
+				</div>
+				<div class="winmain" style="background: #5e6171!important;">
+					<ul class="writebox">
+						<li>
+						<div style="text-align: center;color: red">
+							查询最多一次查询31天
+						</div>
+						<!--<p>
+							<input name="username" class="form-control" id="username" type="text" placeholder="用户名" value="">
+						</p>-->
+						</li>
+						<li>
+						<div>
+							起始日期
+						</div>
+						<p>
+							<input name="fromTime" class="form_datetime" id="fromTime" type="text" placeholder="起始日期" value="<?php echo $para['fromTime'] ? $para['fromTime'] : date('Y-m-d 00:00');?>" data-date-format="yyyy-mm-dd hh:ii">
+						</p>
+						</li>
+						<li>
+						<div>
+							截止日期
+						</div>
+						<p>
+							<input name="toTime" class="form_datetime" id="toTime" type="text" placeholder="截止日期" value="<?php echo $para['toTime'] ? $para['fromTime'] : date('Y-m-d H:i');?>" data-date-format="yyyy-mm-dd hh:ii">
+						</p>
+						</li>
+					</ul>
+				</div>
+				<div class="winfoot" style="background: #5e6171!important;">
+					<p>
+						<input class="btn btnblock" type="submit" data-pro="search" data-action="<?php echo U('team/searchReport');?>" value="提交">
+					</p>
+					<p>
+						<input class="btn btnblock btnblue" onclick="$('#queryMask').css('display', 'none');" type="button" value="取消">
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="m-user-duobaoRecord" id="duobaoRcd_dvWrapper">
+		
+		<div id="pro-view-6">
+			<div data-pro="loading">
+			</div>
+			<span id="record-span">
+				
+<ul class="w-goodsList w-goodsList-l m-user-goodsList" data-pro="list">
+	<li id="pro-view-8" class="w-goodsList-item">
+	<div class="w-goods w-goods-l w-goods-ing m-user-goods" style="background: #5e6171!important;color: white">
+		<div class="w-goods-info">
+		<!--<table class="table">
+			<tr>
+				<th>用户账号</th>
+				<th>有效余额</th>
+				<th>充值总额</th>
+				<th>提现总额</th>
+				<th>投注总额</th>
+				<th>中奖总额</th>
+				<th>返水总额</th>
+				<th>活动佣金</th>
+				<th>合计盈亏</th>
+
+			</tr>
+			<tr>
+				<td>团队总结</td>
+				<td><?=$this->ifs($all['coin'], '0.0000')?></td>
+				<td><?=$this->ifs($all['rechargeAmount'], '0.0000')?></td>
+				<td><?=$this->ifs($all['cashAmount'], '0.0000')?></td>
+				<td><?=$this->ifs($all['betAmount'], '0.0000')?></td>
+				<td><?=$this->ifs($all['zjAmount'], '0.0000')?></td>
+				<td><?=$this->ifs($all['fanDianAmount'], '0.0000')?></td>
+				<td><?=$this->ifs($all['brokerageAmount'], '0.0000')?></td>
+				<td><?=$this->ifs($all['zjAmount']-$all['betAmount']+$all['fanDianAmount'], '0.0000')?></td>
+			</tr>
+		</table>-->
+			<p>
+				用户账号：<strong>团队总结</strong>
+			</p>
+			<p>
+				有效余额：<?=$this->ifs($all['coin'], '0')?>
+			</p>
+			<p>
+				充值总额：<?=$this->ifs($all['rechargeAmount'], '0')?>
+			</p>
+			<p>
+				提现总额：<?=$this->ifs($all['cashAmount'], '0')?>
+			</p>
+			<p>
+				投注总额：<?=$this->ifs($all['betAmount'], '0')?>
+			</p>
+			<p>
+				中奖总额：<?=$this->ifs($all['zjAmount'], '0')?>
+			</p>
+			<p>
+				返水总额：<?=$this->ifs($all['fanDianAmount'], '0')?>
+			</p>
+			<p>
+				活动佣金：<?=$this->ifs($all['brokerageAmount'], '0')?>
+			</p>
+			<p>
+				合计盈亏：<?=$this->ifs($all['zjAmount']-$all['betAmount']+$all['fanDianAmount'], '0')?>
+				<!--合计盈亏：<?=$this->ifs($all['zyk'], '0')?>-->
+			</p>
+		</div>
+	</div>
+	</li>
+	<?php foreach($data as $vo){ ?>
+	<li id="pro-view-8" class="w-goodsList-item">
+	<div class="w-goods w-goods-l w-goods-ing m-user-goods" style="background: #5e6171!important;color: white">
+		<div class="w-goods-info">
+			<p>
+				用户账号：<?php echo ($vo["username"]); ?> 
+			</p>
+			<p>
+				有效余额：<?=$this->ifs($vo['coin'], '0')?>
+			</p>
+			<p>
+				充值总额：<?=$this->ifs($vo['rechargeAmount'], '0')?>
+			</p>
+			<p>
+				提现总额：<?=$this->ifs($vo['cashAmount'], '0')?>
+			</p>
+			<p>
+				投注总额：<?=$this->ifs($vo['betAmount'], '0')?>
+			</p>
+			<p>
+				中奖总额：<?=$this->ifs($vo['zjAmount'], '0')?>
+			</p>
+			<p>
+				返水总额：<?=$this->ifs($vo['fanDianAmount'], '0')?>
+			</p>
+			<p>
+				活动佣金：<?=$this->ifs($vo['brokerageAmount'], '0')?>
+			</p>
+			<p>
+				合计盈亏：<?=$this->ifs($vo['zjAmount']-$vo['betAmount']+$vo['fanDianAmount'], '0')?>
+				<!--合计盈亏：<?=$this->ifs($vo['zyk'], '0')?>-->
+			</p>
+			<p style="display: none">
+				<?php {?>
+                <a target="ajax" class="text-primary" href="<?=U('team/searchReport?parentId='.$vo['uid'].'&fromTime='.$para['fromTime'].'&toTime='.$para['toTime']) ?>" style="font-weight: bold;font-size: 14px">查看下级</a>
+				<?php }?>&nbsp;&nbsp;&nbsp;
+                <?php if($vo['uid']!=$user['uid'] && $vo['parentId']){?>
+                  <a target="ajax" class="text-primary" href="<?=U('team/searchReport?uid='.$vo['uid'].'&fromTime='.$para['fromTime'].'&toTime='.$para['toTime']) ?>" style="font-weight: bold;font-size: 14px">查看上级</a>
+				<?php }?>
+			</p>
+		</div>
+	</div>
+	</li>
+	<?php } if(!$data) { ?>
+	<div style="text-align:center">此用户没有下级</div>
+	<?php } ?>
+</ul>
+<div class="page">
+	<?php echo ($_page); ?>
+</div>
+			</span>
+		</div>
+	</div>
+</div>
+<button id="pro-view-0" class="w-button w-button-round w-button-backToTop" style="bottom: 55px; display: none;">返回顶部</button>
+<script src="/Public/Mobile/js/bootstrap-datetimepicker.min.js"></script>
+<script src="/Public/Mobile/js/bootstrap-datetimepicker.zh-CN.min.js"></script>
+<script>
+	$(document).ready(function () {		
+		$('.form_datetime').datetimepicker({
+			autoclose: 1,
+			todayBtn: 0,
+			minView: 2,
+			language: 'zh-CN',
+			format: 'yyyy-mm-dd hh:ii'
+		});
+		$('.form_datetime').focus(function () {
+			this.blur();
+		});
+	});
+</script>
+
+	<!-- /主体 -->
+
+	<!-- 底部 -->
+	
+	<!-- /底部 -->
+	<div id="wanjinDialog"></div>
+</body>
+</html>

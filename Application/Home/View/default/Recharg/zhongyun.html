@@ -1,0 +1,375 @@
+<extend name="Base/common"/>
+<block name="title">
+    <title>在线充值－{:S('WEB_NAME')}</title>
+</block>
+<block name="style">
+    <link href="__CSS__/chongzhi.css" rel="stylesheet">
+</block>
+<block name="body">
+    <?php require_once("./mb/Mobaopay.Config.php"); ?>
+    <div class="effect mainnav-lg mainnav-fixed navbar-fixed footer-fixed" id="container">
+        <div id="page-content">
+            <form id="recharge" method='POST' action="{:U('recharge/zhongyunPost')}" role="form">
+                <div class="panel">
+                    <div class="panel-heading">
+                        <h3 class="panel-title"><img alt="" src="__IMG__/main/cz.png">中云支付</h3>
+                    </div>
+                    <div class="panel-body chongzhibox">
+                        <div class="czbox">
+                            <!--            <div class="czrow">
+                                            <div class="czlabel">
+                                                充值银行：
+                                            </div>
+                                            <div class="cztxt">
+                                                <div class="radio">
+                                                 &lt;!&ndash;   <label class="form-radio form-normal form-text active"><input autocomplete="off" name="yinhang" checked="checked" type="radio" value='CMBC'/> 招商银行 </label>
+                                                    <label class="form-radio form-normal form-text active"><input autocomplete="off" name="yinhang" type="radio" value='ICBC'/> 工商银行 </label>
+                                                    <label class="form-radio form-normal form-text active"><input autocomplete="off" name="yinhang" type="radio" value='CCB'/> 建设银行 </label>
+                                                    <label class="form-radio form-normal form-text active"><input autocomplete="off" name="yinhang" type="radio" value='SPDB'/> 浦发银行 </label>
+                                                    <label class="form-radio form-normal form-text active"><input autocomplete="off" name="yinhang" type="radio" value='ABC'/> 农业银行 </label>
+                                                    <label class="form-radio form-normal form-text active"><input autocomplete="off" name="yinhang" type="radio" value='CMSB'/> 民生银行 </label>
+                                                    <label class="form-radio form-normal form-text active"><input autocomplete="off" name="yinhang" type="radio" value='SDB'/> 深圳发展银行 </label>
+                                                    <label class="form-radio form-normal form-text active"><input autocomplete="off" name="yinhang" type="radio" value='CIB'/> 兴业银行 </label>
+                                                    <label class="form-radio form-normal form-text active"><input autocomplete="off" name="yinhang" type="radio" value='BCM'/> 交通银行 </label>
+                                                    <label class="form-radio form-normal form-text active"><input autocomplete="off" name="yinhang" type="radio" value='CEB'/> 光大银行 </label>
+                                                    <label class="form-radio form-normal form-text active"><input autocomplete="off" name="yinhang" type="radio" value='BOC'/> 中国银行 </label>
+                                                    <label class="form-radio form-normal form-text active"><input autocomplete="off" name="yinhang" type="radio" value='PAB'/> 平安银行 </label>
+                                                    <label class="form-radio form-normal form-text active"><input autocomplete="off" name="yinhang" type="radio" value='GDB'/> 广发银行 </label>
+                                                    <label class="form-radio form-normal form-text active"><input autocomplete="off" name="yinhang" type="radio" value='CNCB'/> 中信银行 </label>
+                                                    <label class="form-radio form-normal form-text active"><input autocomplete="off" name="yinhang" type="radio" value='NBCB'/> 宁波银行 </label>&ndash;&gt;
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <hr>
+                                        <div class="czrow">
+                                            <div class="czlabel">
+                                                充值金额：<?=$amount; ?> 元
+                                            </div>
+                                        </div>-->
+                            <style>
+                                .new-cards {
+                                    padding: 25px 0 0 65px;
+                                    background: #203F71;
+                                    border: 1px solid #2F4F78;
+                                    margin: 10px 0;
+                                }
+
+                                .new-cards span {
+                                    display: inline-block;
+                                    width: 190px;
+                                    text-align: left;
+                                    margin: 0 20px 20px 0;
+                                }
+
+                                .new-cards input {
+                                    position: relative;
+                                    bottom: 0px;
+                                    margin-bottom: 0;
+                                }
+
+                                input {
+                                    min-height: 20px;
+                                    line-height: 20px;
+                                }
+
+                                .t-add, .b-add {
+                                    display: inline-block;
+                                    vertical-align: middle;
+                                }
+
+                                .card-block {
+                                    display: block;
+                                    margin-top: 16px;
+                                }
+
+                                .card-block span {
+                                    font-size: 1em;
+
+                                }
+
+                                .t-add input[type="text"] {
+                                    width: 241px;
+                                    height: 27px;
+                                    border: 1px solid #c3c1c1;
+                                    text-align: left;
+                                    line-height: 20px;
+                                    margin: 0 10px;
+                                    outline: 0;
+                                }
+                                ol, ul {
+                                    list-style: none;
+                                }
+                            </style>
+                            <div class="new-recharge">
+                                    <div class="Bank-card">
+                                        <div class="new-cards" id="bank_div">
+                              <span class="">
+                                <label>
+                                  <input value="CMBC" name="yinhang" type="radio" checked="true">
+                                  <img src="__IMG__/banks/CMB.gif">
+                                </label>
+                              </span>
+
+                                            <span class="">
+                                <label>
+                                  <input value="ICBC" name="yinhang" type="radio">
+                                  <img src="__IMG__/banks/ICBC.gif">
+                                </label>
+                             </span>
+
+                                            <span class="">
+                                <label>
+                                  <input value="CCB" name="yinhang" type="radio">
+                                  <img src="__IMG__/banks/CCB.gif">
+                                </label>
+                              </span>
+
+                                            <span class="">
+                                <label>
+                                   <input value="ABC" name="yinhang" type="radio">
+                                  <img src="__IMG__/banks/ABC.gif">
+                                </label>
+                              </span>
+
+                                            <span class="">
+                                <label>
+                                  <input value="CMSB" name="yinhang" type="radio">
+                                  <img src="__IMG__/banks/CMBC.gif">
+                                </label>
+                              </span>
+
+                                            <span class="">
+                                <label>
+                                  <input value="CIB" name="yinhang" type="radio">
+                                  <img src="__IMG__/banks/CIB.gif">
+                                </label>
+                              </span>
+
+                                            <span class="">
+                                <label>
+                                  <input value="CEB" name="yinhang" type="radio">
+                                  <img src="__IMG__/banks/CEB.gif">
+                                </label>
+                              </span>
+
+                                            <span class="">
+                                <label>
+                                 <input value="CITIC" name="yinhang" type="radio">
+                                  <img src="__IMG__/banks/CITIC.gif">
+                                </label>
+                              </span>
+
+                                            <span class="">
+                                <label>
+                                  <input value="BCM" name="yinhang" type="radio">
+                                  <img src="__IMG__/banks/10.jpg">
+                                </label>
+                              </span>
+
+                                            <span class="hidden">
+                                <label>
+                                  <input value="CEB" name="yinhang" type="radio">
+                                  <img src="__IMG__/banks/CEB.gif">
+                                </label>
+                              </span>
+
+                                            <span class="">
+                                <label>
+                                  <input value="PAB" name="yinhang" type="radio">
+                                  <img src="__IMG__/banks/15.jpg">
+                                </label>
+                              </span>
+
+                                            <span class="">
+                                <label>
+                                  <input value="BOC" name="yinhang" type="radio">
+                                  <img src="__IMG__/banks/BOC.gif">
+                                </label>
+                              </span>
+
+                          <!--                  <span class="hidden">
+                                <label>
+                                  <input value="NBCB" name="yinhang" type="radio">
+                                  <img src="__IMG__/banks/NBCB.jpg">
+                                </label>
+                              </span>-->
+
+                                            <span class="">
+                                <label>
+                                  <input value="NBCB" name="yinhang" type="radio">
+                                  <img src="__IMG__/banks/NBCB.jpg">
+                                </label>
+                              </span>
+                                            <!--
+                                                                                        <span class="hidden">
+                                                                            <label>
+                                                                              <input value="SHB" name="bk" type="radio">
+                                                                              <img src="/images/bank/24.jpg">
+                                                                            </label>
+                                                                          </span>
+
+                                                                                        <span class="hidden">
+                                                                            <label>
+                                                                              <input value="BOB" name="bk" type="radio">
+                                                                              <img src="/images/bank/14.jpg">
+                                                                            </label>
+                                                                          </span>
+
+                                                                                        <span class="hidden">
+                                                                            <label>
+                                                                              <input value="CUP" name="bk" type="radio">
+                                                                              <img src="/images/bank/25.jpg">
+                                                                            </label>
+                                                                          </span>
+
+                                                                                        <span class="">
+                                                                            <label>
+                                                                              <input value="BCOM" name="bk" type="radio">
+                                                                              <img src="/images/bank/10.jpg">
+                                                                            </label>
+                                                                          </span>
+
+                                                                                        <span class="hidden">
+                                                                            <label>
+                                                                              <input value="BJRCB" name="bk" type="radio">
+                                                                              <img src="/images/bank/BJRCB.jpg">
+                                                                            </label>
+                                                                          </span>
+
+                                                                                        <span class="hidden">
+                                                                            <label>
+                                                                              <input value="SRCB" name="bk" type="radio">
+                                                                              <img src="/images/bank/SRCB.jpg">
+                                                                            </label>
+                                                                          </span>
+
+                                                                                        <span class="hidden">
+                                                                            <label>
+                                                                              <input value="BEA" name="bk" type="radio">
+                                                                              <img src="/images/bank/BEA.jpg">
+                                                                            </label>
+                                                                          </span>
+
+                                                                                        <span class="hidden">
+                                                                            <label>
+                                                                              <input value="BHB" name="bk" type="radio">
+                                                                              <img src="/images/bank/BHB.jpg">
+                                                                            </label>
+                                                                          </span>
+
+                                                                                        <span class="hidden">
+                                                                            <label>
+                                                                              <input value="HSB" name="bk" type="radio">
+                                                                              <img src="/images/bank/HSB.jpg">
+                                                                            </label>
+                                                                          </span>
+
+                                                                                        <span class="hidden">
+                                                                            <label>
+                                                                              <input value="CBHB" name="bk" type="radio">
+                                                                              <img src="/images/bank/CBHB.jpg">
+                                                                            </label>
+                                                                          </span>
+
+                                                                                        <span class="hidden">
+                                                                            <label>
+                                                                              <input value="NBCB" name="bk" type="radio">
+                                                                              <img src="/images/bank/NBCB.jpg">
+                                                                            </label>
+                                                                          </span>
+
+                                                                                        <span class="hidden">
+                                                                            <label>
+                                                                              <input value="NJCB" name="bk" type="radio">
+                                                                              <img src="/images/bank/NJCB.jpg">
+                                                                            </label>
+                                                                          </span>
+
+                                                                                        <span class="hidden">
+                                                                            <label>
+                                                                              <input value="ZSBANK" name="bk" type="radio">
+                                                                              <img src="/images/bank/ZSBANK.jpg">
+                                                                            </label>
+                                                                          </span>
+
+                                                                                        <span class="hidden">
+                                                                            <label>
+                                                                              <input value="HZB" name="bk" type="radio">
+                                                                              <img src="/images/bank/HZB.jpg">
+                                                                            </label>
+                                                                          </span>
+
+                                                                                        <span class="hidden">
+                                                                            <label>
+                                                                              <input value="CZCB" name="bk" type="radio">
+                                                                              <img src="/images/bank/CZCB.jpg">
+                                                                            </label>
+                                                                          </span>-->
+
+                                        </div>
+
+
+                                    </div>
+                                    <!-- Bank-card結束 -->
+                                    <div>
+                                        <div class="t-add">
+                            <span class="card-block">
+                            <span>充值金额</span>
+                           <?=$amount; ?>
+                            <span>元</span>
+                            </span>
+                                        </div>
+                                        <div class="b-add">
+                                            <span class="ct-notice">（最低单笔存款：<b style="color: red;" id="bank-min">--</b>元；最高单笔存款<b
+                                                    id="bank-max" style="color: red;">--</b>元）</span>
+                                        </div>
+                                    </div>
+
+                                    <!-- 此處是填寫提示區塊 -->
+                                    <div class="new-information">
+                                        <ul class="tx-list">
+                                            <li class="bkrcg clearfix field">
+                                                <label style="position:relative; top: -10px;display: block; margin-top: 30px; font-weight: bold;">使用需知</label>
+                                                <span class="ct">
+                                    <dl style="display:inline-block">
+                                                <dd>每天的充值处理时间为： 07:00 至次日 05:00 (所有时间均为24小时制时间)</dd>
+                                                <dd>请输入充值金额，点击“下一步”会跳转到支付页面。</dd>
+                                    </dl>
+                                </span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <!-- new-information結束 -->
+                                <!-- form結束 -->
+                            </div>
+                        </div>
+                        <div class="czfoot">
+                            <div class="czfootbox">
+                                <button class="btn btn-primary" autocomplete="off" type="submit"
+                                        onclick="return fukuan(this);">
+                                    继续下一步
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <input type="hidden" name="amount" value="{$amount}"/>
+
+                <input size="50" type="hidden" name="merchParam" id="merchParam" value="{$user.uid}"/>
+                <input size="50" type="hidden" name="tradeSummary" id="tradeSummary" value="{$user.username}"/>
+            </form>
+        </div>
+    </div>
+</block>
+<script src="__JS__/bootbox.min.js"></script>
+<script type="text/javascript">
+    function fukuan(me) {
+        $(me).attr('disabled', true);
+        $(me).text('正在转接。。');
+    }
+    $('.yh li a').click(function () {
+        $(this.parent()).addClass('selected').sibling().removeClass('selected');
+    })
+</script>
+</block>

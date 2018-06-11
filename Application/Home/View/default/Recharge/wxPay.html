@@ -1,0 +1,157 @@
+<extend name="Base/common"/>
+<block name="title">
+    <title>在线充值－{:S('WEB_NAME')}</title>
+</block>
+<block name="style">
+    <link href="__CSS__/chongzhi.css" rel="stylesheet">
+</block>
+<block name="body">
+    <?php require_once("./mb/Mobaopay.Config.php"); ?>
+    <div class="effect mainnav-lg mainnav-fixed navbar-fixed footer-fixed" id="container">
+        <div id="page-content">
+            <form id="recharge" method='POST' action="{:U('recharge/zhongyunPost')}" role="form">
+                <div class="panel">
+                    <div class="panel-heading">
+                        <h3 class="panel-title"><img alt="" src="__IMG__/main/cz.png">微信支付</h3>
+                    </div>
+                    <div class="panel-body chongzhibox">
+                        <div class="czbox">
+                            <style>
+                                .new-cards {
+                                    padding: 25px 0 0 65px;
+                                    background: #203F71;
+                                    border: 1px solid #2F4F78;
+                                    margin: 10px 0;
+                                }
+
+                                .new-cards span {
+                                    display: inline-block;
+                                    width: 190px;
+                                    text-align: left;
+                                    margin: 0 20px 20px 0;
+                                }
+
+                                .new-cards input {
+                                    position: relative;
+                                    bottom: 0px;
+                                    margin-bottom: 0;
+                                }
+
+                                input {
+                                    min-height: 20px;
+                                    line-height: 20px;
+                                }
+
+                                .t-add, .b-add {
+                                    display: inline-block;
+                                    vertical-align: middle;
+                                }
+
+                                .card-block {
+                                    display: block;
+                                    margin-top: 16px;
+                                }
+
+                                .card-block span {
+                                    font-size: 1em;
+
+                                }
+                                .t-add input[type="text"] {
+                                    width: 241px;
+                                    height: 27px;
+                                    border: 1px solid #c3c1c1;
+                                    text-align: left;
+                                    line-height: 20px;
+                                    margin: 0 10px;
+                                    outline: 0;
+                                }
+                                ol, ul {
+                                    list-style: none;
+                                }
+                            </style>
+                            <div class="new-recharge">
+                                    <div class="Bank-card">
+                                        <div class="new-cards" id="bank_div">
+                              <span class="">
+                                <label>
+                                  <input value="CMBC" name="yinhang" type="radio" checked="true">
+                                  <img src="__IMG__/pay/WeChat.gif">
+                                </label>
+                              </span>
+                                            <span class="">
+                                <label>
+                                  <input value="ICBC" name="yinhang" type="radio">
+                                  <img src="__IMG__/pay/WeChat.gif">
+                                </label>
+                             </span>
+                                            <span class="">
+                                <label>
+                                  <input value="NBCB" name="yinhang" type="radio">
+                                  <img src="__IMG__/pay/WeChat.gif">
+                                </label>
+                              </span>
+                                        </div>
+
+                                    </div>
+                                    <!-- Bank-card結束 -->
+                                    <div>
+                                        <div class="t-add">
+                            <span class="card-block">
+                            <span>充值金额</span>
+                           <?=$amount; ?>
+                            <span>元</span>
+                            </span>
+                                        </div>
+                                        <div class="b-add">
+                                            <span class="ct-notice">（最低单笔存款：<b style="color: red;" id="bank-min">--</b>元；最高单笔存款<b
+                                                    id="bank-max" style="color: red;">--</b>元）</span>
+                                        </div>
+                                    </div>
+
+                                    <!-- 此處是填寫提示區塊 -->
+                                    <div class="new-information">
+                                        <ul class="tx-list">
+                                            <li class="bkrcg clearfix field">
+                                                <label style="position:relative; top: -10px;display: block; margin-top: 30px; font-weight: bold;">使用需知</label>
+                                                <span class="ct">
+                                    <dl style="display:inline-block">
+                                                <dd>每天的充值处理时间为： 07:00 至次日 05:00 (所有时间均为24小时制时间)</dd>
+                                                <dd>请输入充值金额，点击“下一步”会跳转到支付页面。</dd>
+                                    </dl>
+                                </span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <!-- new-information結束 -->
+                                <!-- form結束 -->
+                            </div>
+                        </div>
+                        <div class="czfoot">
+                            <div class="czfootbox">
+                                <button class="btn btn-primary" autocomplete="off" type="submit"
+                                        onclick="return fukuan(this);">
+                                    继续下一步
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <input type="hidden" name="amount" value="{$amount}"/>
+
+                <input size="50" type="hidden" name="merchParam" id="merchParam" value="{$user.uid}"/>
+                <input size="50" type="hidden" name="tradeSummary" id="tradeSummary" value="{$user.username}"/>
+            </form>
+        </div>
+    </div>
+</block>
+<script src="__JS__/bootbox.min.js"></script>
+<script type="text/javascript">
+    function fukuan(me) {
+        $(me).attr('disabled', true);
+        $(me).text('正在转接。。');
+    }
+    $('.yh li a').click(function () {
+        $(this.parent()).addClass('selected').sibling().removeClass('selected');
+    })
+</script>
+</block>

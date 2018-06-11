@@ -1,0 +1,91 @@
+[MSG]: PDO::__construct() [<a href='pdo.--construct'>pdo.--construct</a>]: [2002] 由于目标机器积极拒绝，无法连接。
+ (trying to connect via tcp://localhost:3306)
+[FILE]: E:\wwwroot1\lafei\html\nitalk\system\lib\db.lib.php
+[LINE]: 19
+[TIME]: 2017-01-19 11:04:41
+[URI]: /nitalk/gate
+
+[MSG]: PDO::__construct() [<a href='pdo.--construct'>pdo.--construct</a>]: [2002] 由于目标机器积极拒绝，无法连接。
+ (trying to connect via tcp://localhost:3306)
+[FILE]: E:\wwwroot1\lafei\html\nitalk\system\lib\db.lib.php
+[LINE]: 19
+[TIME]: 2017-01-19 11:04:43
+[URI]: /nitalk/gate
+
+[MSG]: PDO::__construct() [<a href='pdo.--construct'>pdo.--construct</a>]: [2002] 由于目标机器积极拒绝，无法连接。
+ (trying to connect via tcp://localhost:3306)
+[FILE]: E:\wwwroot1\lafei\html\nitalk\system\lib\db.lib.php
+[LINE]: 19
+[TIME]: 2017-01-19 11:04:44
+[URI]: /nitalk/gate
+
+[MSG]: PDO::__construct() [<a href='pdo.--construct'>pdo.--construct</a>]: [2002] 由于目标机器积极拒绝，无法连接。
+ (trying to connect via tcp://localhost:3306)
+[FILE]: E:\wwwroot1\lafei\html\nitalk\system\lib\db.lib.php
+[LINE]: 19
+[TIME]: 2017-01-19 11:04:45
+[URI]: /nitalk/gate
+
+[MSG]: PDO::__construct() [<a href='pdo.--construct'>pdo.--construct</a>]: [2002] 由于目标机器积极拒绝，无法连接。
+ (trying to connect via tcp://localhost:3306)
+[FILE]: E:\wwwroot1\lafei\html\nitalk\system\lib\db.lib.php
+[LINE]: 19
+[TIME]: 2017-01-19 11:04:46
+[URI]: /nitalk/gate
+
+[MSG]: PDO::__construct() [<a href='pdo.--construct'>pdo.--construct</a>]: [2002] 由于目标机器积极拒绝，无法连接。
+ (trying to connect via tcp://localhost:3306)
+[FILE]: E:\wwwroot1\lafei\html\nitalk\system\lib\db.lib.php
+[LINE]: 19
+[TIME]: 2017-01-19 11:04:47
+[URI]: /nitalk/gate
+
+[MSG]: PDO::__construct() [<a href='pdo.--construct'>pdo.--construct</a>]: [2002] 由于目标机器积极拒绝，无法连接。
+ (trying to connect via tcp://localhost:3306)
+[FILE]: E:\wwwroot1\lafei\html\nitalk\system\lib\db.lib.php
+[LINE]: 19
+[TIME]: 2017-01-19 11:04:48
+[URI]: /nitalk/gate
+
+[MSG]: PDO::__construct() [<a href='pdo.--construct'>pdo.--construct</a>]: [2002] 由于目标机器积极拒绝，无法连接。
+ (trying to connect via tcp://localhost:3306)
+[FILE]: E:\wwwroot1\lafei\html\nitalk\system\lib\db.lib.php
+[LINE]: 19
+[TIME]: 2017-01-19 11:04:49
+[URI]: /nitalk/gate
+
+[MSG]: PDO::__construct() [<a href='pdo.--construct'>pdo.--construct</a>]: [2002] 由于目标机器积极拒绝，无法连接。
+ (trying to connect via tcp://localhost:3306)
+[FILE]: E:\wwwroot1\lafei\html\nitalk\system\lib\db.lib.php
+[LINE]: 19
+[TIME]: 2017-01-19 11:04:50
+[URI]: /nitalk/gate
+
+[MSG]: PDO::__construct() [<a href='pdo.--construct'>pdo.--construct</a>]: [2002] 由于目标机器积极拒绝，无法连接。
+ (trying to connect via tcp://localhost:3306)
+[FILE]: E:\wwwroot1\lafei\html\nitalk\system\lib\db.lib.php
+[LINE]: 19
+[TIME]: 2017-01-19 11:04:51
+[URI]: /nitalk/gate
+
+[MSG]: PDO::__construct() [<a href='pdo.--construct'>pdo.--construct</a>]: [2002] 由于目标机器积极拒绝，无法连接。
+ (trying to connect via tcp://localhost:3306)
+[FILE]: E:\wwwroot1\lafei\html\nitalk\system\lib\db.lib.php
+[LINE]: 19
+[TIME]: 2017-01-19 11:04:52
+[URI]: /nitalk/gate
+
+[MSG]: PDO::__construct() [<a href='pdo.--construct'>pdo.--construct</a>]: [2002] 由于目标机器积极拒绝，无法连接。
+ (trying to connect via tcp://localhost:3306)
+[FILE]: E:\wwwroot1\lafei\html\nitalk\system\lib\db.lib.php
+[LINE]: 19
+[TIME]: 2017-01-19 11:04:53
+[URI]: /nitalk/gate
+
+[MSG]: PDO::__construct() [<a href='pdo.--construct'>pdo.--construct</a>]: [2002] 由于目标机器积极拒绝，无法连接。
+ (trying to connect via tcp://localhost:3306)
+[FILE]: E:\wwwroot1\lafei\html\nitalk\system\lib\db.lib.php
+[LINE]: 19
+[TIME]: 2017-01-19 11:04:54
+[URI]: /nitalk/gate
+
